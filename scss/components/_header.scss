@@ -1,0 +1,11 @@
+.header{
+  
+    &__top{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+    }
+}
