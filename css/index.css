@@ -168,8 +168,27 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 2;
   font-style: normal;
   max-width: 745px;
+  margin-bottom: 35px;
+}
+
+.hero__link {
+  padding: 8px 0;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 2px solid #E2B024;
+  margin-bottom: 30px;
+}
+
+.hero .link {
+  font-family: "ChocolateBox", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 9px;
+  color: #E2B024;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=index.css.map */

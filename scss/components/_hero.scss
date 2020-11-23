@@ -21,8 +21,24 @@
     }
     &__description{
         @include font($font-poppins, 16px, 300);
-        line-height: 1.5;
+        line-height: 2;
         font-style: normal;
         max-width: 745px;
+        margin-bottom: 35px;
+    }
+    &__link{
+        padding: 8px 0;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        border-bottom: 2px solid $orange;
+        margin-bottom: 30px;
+    }
+    .link{
+        @include font($font-choco, 16px, 300);
+        line-height: 9px;
+        color: $orange;
+        text-transform: uppercase;
+
     }
 }
