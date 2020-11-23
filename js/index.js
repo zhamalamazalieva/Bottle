@@ -25,4 +25,13 @@ function myFunction() {
    nextArrow:'.slider__next'
 
   });
+  $('.offer__slider').slick({
+    dots:true,
+    arrows:false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite:true,
+    centerMode: true,
+   
+   });
             
