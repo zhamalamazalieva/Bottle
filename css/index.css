@@ -181,6 +181,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 35px;
 }
 
+.hero__description #more {
+  display: none;
+}
+
 .hero__link {
   padding: 8px 0;
   border-top: transparent;
@@ -270,6 +274,7 @@ h1, h2, h3, h4, h5, h6 {
 .new__img {
   position: absolute;
   left: 50%;
+  bottom: -40%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   height: 690px !important;
@@ -336,17 +341,5 @@ h1, h2, h3, h4, h5, h6 {
 .new__arrows .slider__next {
   right: -10px;
   bottom: 45%;
-}
-
-.new .slick-slider .slick-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.new .slick-slide {
-  border: none !important;
-  outline: none !important;
 }
 /*# sourceMappingURL=index.css.map */

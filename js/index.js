@@ -18,8 +18,9 @@ function myFunction() {
    arrows: true,
    slidesToShow: 1,
    slidesToScroll: 1,
+   infinite:true,
   //  autoplay: true,
-  //  autoplaySpeed: 2000,
+  // //  autoplaySpeed: 2000,
    prevArrow:'.slider__prev',
    nextArrow:'.slider__next'
 
