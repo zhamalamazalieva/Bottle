@@ -13,3 +13,21 @@ function myFunction() {
       moreText.style.display = "inline";
     }
   }
+
+  $('.new__slider').slick({
+   arrows: true,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   prevArrow:'.slider__prev',
+   nextArrow:'.slider__next'
+  });
+
+  $('.offer__slider').slick({
+    dots:true,
+    arrows:false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    infinite:true,
+    // centerMode:true
+   });
+            
