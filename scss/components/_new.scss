@@ -96,23 +96,23 @@
             bottom: 45%;
         }
         .slider__next{
-            right: 0px;
+            right: -3%;
             bottom: 45%;
         }
     }
-//    .new__slider{
-//        width: 100%;
-//    }
-//    .slick-list{
-//        overflow-y: hidden;
-//        overflow-x: hidden;
-//    }
-//     .slick-track{
-//         width: 50%;
-//         display: flex;
-//     }
-//     .slick-slider{
-//         outline: none;
-//         border: none;
-//     }
+   .new__slider{
+       width: 100%;
+   }
+   .slick-list{
+       overflow-y: hidden;
+       overflow-x: hidden;
+   }
+    .slick-track{
+        width: 50%;
+        display: flex;
+    }
+    .slick-slider{
+        outline: none;
+        border: none;
+    }
 }

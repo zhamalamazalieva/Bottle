@@ -80,6 +80,7 @@
 //     .slide { transition: all .2s ease-in-out; }
 // .slide.active { transform: scale(1.1); }
 }
-.offer .offer__item.slick-slide.slick-current.slick-active{
+.offer .slick-slide .slick-current{
     transform: scale(1.3);
 }
+
