@@ -20,43 +20,48 @@
                         <img class="header__logo" src="./images/png/logo.png" alt="logo">
                         <div class="header__top--right">
                             <div class="header__list">
-                                <ul class="header__menu menu row">
-                                    <li><a href="">Login</a></li>
-                                    <li><a href="">Register</a></li>
-                                    <li><a href="">Wish List (0)</a></li>
+                                <ul class="header__login row">
+                                    <li><a class="header__register"href="">Login</a></li>
+                                    <li><a a class="header__register"href="">Register</a></li>
+                                    <li><a a class="header__register"href="">Wish List (0)</a></li>
                                 </ul>
                             </div>
-                            <div class="header__icons">
-                                <ul class="header__menu">
-                                    <li><a href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                
+                                <ul class="header__icons">
+                                    <li><a class="header__icon"href=""><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="9.76657" cy="9.76657" r="8.98856" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16.0183 16.4851L19.5423 20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
+                                        
                                         </a></li>
-                                    <li><a href=""><svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7422 15.0004H5.25778C2.90569 15.0004 1 13.0954 1 10.7454V5.22937C1 2.87937 2.90569 0.974365 5.25778 0.974365H14.7422C17.0943 0.974365 19 2.87937 19 5.22937V10.7454C19 13.0954 17.0943 15.0004 14.7422 15.0004Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <li><a class="header__icon" href=""><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.7729 8.30504V5.27304C13.7729 3.18904 12.0839 1.50004 10.0009 1.50004C7.91688 1.49104 6.21988 3.17204 6.21088 5.25604V5.27304V8.30504" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7422 20.0004H5.25778C2.90569 20.0004 1 18.0954 1 15.7454V10.2294C1 7.87937 2.90569 5.97437 5.25778 5.97437H14.7422C17.0943 5.97437 19 7.87937 19 10.2294V15.7454C19 18.0954 17.0943 20.0004 14.7422 20.0004Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
+                                        
                                         </a></li>
-                                    <li><a href=""><svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <li><a class="header__icon" href=""><svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="white"/>
                                         </svg>
                                         </a></li>
                                 </ul>
-                            </div>
+                        
                         </div>
                     </div>
                 </div>
                 <div class="header__bottom">
                     <ul class="header__menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Vintage</a></li>
-                        <li><a href="#">Imperial</a></li>
-                        <li><a href="#">Sparkling</a></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contacts</a></li>
-                        
+                        <li><a class="menu__link" href="#">Home</a></li>
+                        <li><a class="menu__link" href="#">Vintage</a></li>
+                        <li><a class="menu__link" href="#">Imperial</a></li>
+                        <li><a class="menu__link" href="#">Sparkling</a></li>
+                        <li><a class="menu__link" href="#">Accessories</a></li>
+                        <li><a class="menu__link" href="#">Blog</a></li>
+                        <li><a class="menu__link" href="#">Product Details</a></li>
+                        <li><a class="menu__link" href="#">Contacts</a></li>
                     </ul>
                 </div>
+                       
             </div>
         </div>
     </header>
@@ -70,13 +75,21 @@
                     <h1 class="hero__title">In each <span class="orange">bottle</span></h1>
                     <p class="hero__description">
                         Experience a true “American Dream” at Winehouse and visit the first tasting room in the United
-                        States established by a former European mirgant vineyard worker and his family.
+                        States established by a former European mirgant vineyard worker and his family.<span id="dots">...</span>
+                        <span id="more"> Experience a true “American Dream” at Winehouse and visit the first tasting
+                            room in the United States established by a former European mirgant vineyard worker and his family.
+                            United States established by a former European mirgant vineyard worker and his family.
+                        </span>
                     </p>
+                    <div class="hero__link">
+                        <a onclick="myFunction()" id="myLink" href="#" class="link">Read more</a>
+                    </div>
                     <img src="./images/png/hero.png" alt="" class="hero__img">
                 </div>
             </div>
         </section>
     </main>
 </body>
-
+<!------------------------------Script files-------------------------------->
+<script src="./js/index.js"></script>
 </html>

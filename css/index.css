@@ -1,4 +1,4 @@
-ьг/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -130,6 +130,10 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #E2B024;
 }
 
+.orange {
+  color: #E2B024;
+}
+
 .header__wrapper {
   background-color: black;
 }
@@ -138,12 +142,16 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 12px 0;
 }
 
-.header__menu {
+.header__login {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,35 +161,75 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__slogan {
-  color: red;
-  margin-right: 312px;
+  color: white;
 }
 
-.header__icons__menu {
+.header__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 35px;
 }
 
 .header__logo {
-  margin-right: 112px;
+  margin-left: 225px;
+  margin-right: 105px;
 }
 
 .header__li {
-  margin-left: 45px;
+  margin-left: 4px;
 }
 
 .header__a {
   text-decoration: none;
 }
 
-.header__bottom {
-  border-bottom-color: whitesmoke;
-  margin-right: 80px;
+.header__menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  font-family: "ChocolateBox", sans-serif;
+  color: white;
+  padding: 22px 0;
+}
+
+.header__menu .menu__link {
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header__menu .menu__link:hover {
+  color: #E2B024;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__top--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__register {
+  color: white;
+  margin-right: 12px;
+}
+
+.header__icon {
+  margin-left: 30px;
 }
 
 .hero {
@@ -228,5 +276,26 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
   font-style: normal;
   max-width: 745px;
+  font-style: normal;
+  max-width: 745px;
+  margin-bottom: 35px;
+}
+
+.hero__link {
+  padding: 8px 0;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 2px solid #E2B024;
+  margin-bottom: 30px;
+}
+
+.hero .link {
+  font-family: "ChocolateBox", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 9px;
+  color: #E2B024;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=index.css.map */
