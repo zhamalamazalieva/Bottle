@@ -14,6 +14,7 @@ function myFunction() {
     }
   }
 
+
   $('.new__slider').slick({
    arrows: true,
    slidesToShow: 1,
@@ -26,8 +27,15 @@ function myFunction() {
     dots:true,
     arrows:false,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     infinite:true,
-    // centerMode:true
+    centerMode:true
    });
-            
+       
+   $('.events__slider').slick({
+    dots:false,
+    arrows:true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+   });
+        

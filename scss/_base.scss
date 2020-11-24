@@ -51,3 +51,16 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 
 }
+.readmore{
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 2px solid $orange;
+}
+.link{
+    @include font($font-choco, 16px, 300);
+    line-height: 9px;
+    color: $orange;
+    text-transform: uppercase;
+
+}
