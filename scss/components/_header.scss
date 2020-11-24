@@ -1,11 +1,18 @@
 .header{
-  
-    &__top{
+    &__wrapper{
+        background-color: black;
+    }
+    &__row{
         display: flex;
         justify-content: space-between;
     }
     &__menu{
         display: flex;
         justify-content: space-between;
+    
+    }
+    &__slogan{
+        color: red;
     }
 }
+        
