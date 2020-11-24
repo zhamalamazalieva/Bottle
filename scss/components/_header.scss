@@ -13,6 +13,26 @@
     }
     &__slogan{
         color: red;
+        margin-right: 312px;
+    }
+    &__icons__menu{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 35px;
+    }
+    &__logo{
+        margin-right: 112px;
+    }
+    &__li{
+        margin-left: 45px;
+      
+    }
+    &__a{
+        text-decoration: none;
+    }
+    &__bottom{
+        border-bottom-color: whitesmoke;
+        margin-right: 80px;
     }
 }
         
