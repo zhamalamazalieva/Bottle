@@ -5,6 +5,7 @@
     &__item{
         position: relative;
         margin: 0  30px 0  0;
+
     }
     &__img{
         width: 100%;
@@ -27,14 +28,18 @@
         @include font($font-choco, 36px, 700);
         line-height: 54px;
     }
+    .slick-slider{
+        outline: none;
+        border: none;
+    }
   
     .slick-track{
         display: flex;
-        width: 100%;
     }
     .slick-list{
         width: 100%;
         overflow: hidden;
+
     }
     .slick-dots{
         margin-top:80px;
@@ -63,4 +68,18 @@
     .slick-dots .slick-active button{
         background-color: $orange;
     }
+    // .slick-slide .slick-current{
+    //     transform: scale(1.2);
+    // }
+    // .slick-center {
+    //     -webkit-transform: scale(1.25);
+    //     -moz-transform: scale(1.25);
+    //     transform: scale(1.25);
+    //     padding: 0 50px;
+    // }
+//     .slide { transition: all .2s ease-in-out; }
+// .slide.active { transform: scale(1.1); }
+}
+.offer .offer__item.slick-slide.slick-current.slick-active{
+    transform: scale(1.3);
 }
