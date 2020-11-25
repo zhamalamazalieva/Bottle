@@ -6,9 +6,11 @@
         @include font($font-poppins, 24px, 400);
         position: relative;
         line-height: 1.5;
-        color: white;
-        width: 35%;
-        margin: 0 auto;
+        color: $white;
+        // margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
   
         &::after{
             content: "";
@@ -48,11 +50,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin:0 20px 95px 20px;
+        margin:0 0 95px 0;
+        min-width: 292px;
     }
     &__img{
         // position: absolute;
         left: 15%;
+        min-height: 365px;
+        margin-bottom:15px;
 
     }
     &__discount{
@@ -62,7 +67,7 @@
         display: inline-block;
         background-color: $orange;
         position: absolute;
-        left: 10%;
+        left: 0;
         width: 80px;
         height: 40px;
         display: flex;
@@ -75,15 +80,17 @@
 
 
     }
+    &__column{
+        justify-content: flex-start;
+    }
     &__product-name{
         @include font($font-choco, 24px, 400);
         line-height: 1.2;
         color: $white;
         justify-self: left;
     }
-
     &__old-price{
-        @include font($font-poppins, 16px, 400);
+        @include font($font-poppins, 16px, 300);
         line-height: 1.2;
         color: $orange;
         text-decoration: line-through;
@@ -94,4 +101,5 @@
         line-height: 1.2;
         color: $orange;
     }
+   
 }

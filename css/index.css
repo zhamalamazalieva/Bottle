@@ -123,10 +123,20 @@ h1, h2, h3, h4, h5, h6 {
       flex-wrap: wrap;
 }
 
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .align-items {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .btn {
@@ -177,6 +187,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 9px;
   color: #E2B024;
   text-transform: uppercase;
+  padding: 8px 0;
 }
 
 .hero {
@@ -231,7 +242,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero__link {
-  padding: 8px 0;
   margin-bottom: 30px;
 }
 
@@ -396,9 +406,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   position: relative;
   line-height: 1.5;
-  color: white;
-  width: 35%;
-  margin: 0 auto;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sort__filter::after {
@@ -450,11 +464,14 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 20px 95px 20px;
+  margin: 0 0 95px 0;
+  min-width: 292px;
 }
 
 .sort__img {
   left: 15%;
+  min-height: 365px;
+  margin-bottom: 15px;
 }
 
 .sort__discount {
@@ -466,7 +483,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   background-color: #E2B024;
   position: absolute;
-  left: 10%;
+  left: 0;
   width: 80px;
   height: 40px;
   display: -webkit-box;
@@ -484,6 +501,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 90px;
 }
 
+.sort__column {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .sort__product-name {
   font-family: "ChocolateBox", sans-serif;
   font-weight: 400;
@@ -496,7 +519,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .sort__old-price {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.2;
   color: #E2B024;
