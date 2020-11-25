@@ -386,6 +386,132 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
 }
 
+.sort__title {
+  margin: 100px 0 90px;
+}
+
+.sort__filter {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  position: relative;
+  line-height: 1.5;
+  color: white;
+  width: 35%;
+  margin: 0 auto;
+}
+
+.sort__filter::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+.sort__filter .filter__items {
+  margin-right: 70px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sort__filter .filter__items:last-child {
+  margin-right: 0;
+}
+
+.sort__filter .filter__items:hover {
+  color: #E2B024;
+  cursor: pointer;
+}
+
+.sort__filter .filter__items:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #E2B024;
+  bottom: 0;
+  left: 0;
+  z-index: 12;
+}
+
+.sort__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px 95px 20px;
+}
+
+.sort__img {
+  left: 15%;
+}
+
+.sort__discount {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: black;
+  display: inline-block;
+  background-color: #E2B024;
+  position: absolute;
+  left: 10%;
+  width: 80px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sort__row {
+  padding-top: 90px;
+}
+
+.sort__product-name {
+  font-family: "ChocolateBox", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+.sort__old-price {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #E2B024;
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+
+.sort__new-price {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #E2B024;
+}
+
 .offer__title {
   margin: 150px 0 135px;
 }
@@ -625,6 +751,16 @@ h1, h2, h3, h4, h5, h6 {
 .contact .social-icons__item {
   margin-top: 25px;
   margin-right: 56px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact .social-icons__item svg {
+  fill: #E2B024;
+}
+
+.contact .social-icons__item:hover svg {
+  fill: white;
 }
 
 .contact__form {

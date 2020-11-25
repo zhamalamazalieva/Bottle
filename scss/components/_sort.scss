@@ -1,0 +1,97 @@
+.sort{
+    &__title{
+        margin: 100px 0 90px;
+    }
+    &__filter{
+        @include font($font-poppins, 24px, 400);
+        position: relative;
+        line-height: 1.5;
+        color: white;
+        width: 35%;
+        margin: 0 auto;
+  
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: white;
+
+        }
+        .filter__items{
+            margin-right:70px;
+            position: relative;
+            transition: 0.3s;
+            &:last-child{
+                margin-right: 0;
+            }
+            &:hover{
+                color: $orange;
+                cursor: pointer;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    background-color: $orange;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 12;
+                }
+            }
+        }
+    }
+    &__item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:0 20px 95px 20px;
+    }
+    &__img{
+        // position: absolute;
+        left: 15%;
+
+    }
+    &__discount{
+        @include font($font-poppins, 14px, 400);
+        line-height: 21px;
+        color:black;
+        display: inline-block;
+        background-color: $orange;
+        position: absolute;
+        left: 10%;
+        width: 80px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__row{
+        padding-top: 90px;
+
+
+    }
+    &__product-name{
+        @include font($font-choco, 24px, 400);
+        line-height: 1.2;
+        color: $white;
+        justify-self: left;
+    }
+
+    &__old-price{
+        @include font($font-poppins, 16px, 400);
+        line-height: 1.2;
+        color: $orange;
+        text-decoration: line-through;
+        margin-right: 5px;
+    }
+    &__new-price{
+        @include font($font-poppins, 24px, 400);
+        line-height: 1.2;
+        color: $orange;
+    }
+}
