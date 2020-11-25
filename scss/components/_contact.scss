@@ -1,0 +1,72 @@
+.contact{
+    &__title{
+        padding-bottom:100px;
+    }
+    &__description, &__type{
+        @include font($font-poppins, 18px, 300);
+        color: $white;
+
+    }
+    &__item{
+        margin-bottom: 50px;
+    }
+    &__description{
+        line-height: 2;
+        padding-bottom: 75px;
+        max-width: 450px;
+    }
+    &__icon{
+        margin-right: 30px;
+    }
+    .social-icons{
+        &__item{
+            margin-top: 25px;
+            margin-right: 56px;
+        }
+       
+    }
+    &__form{
+        width: 100%;
+    }
+    &__label{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 30px;
+
+        div{
+            @include font($font-poppins, 24px, 400);
+            line-height: 1.5;
+            color: white;
+            position: absolute;
+            top: -15px;
+            left: 35px;
+            background-color:black;
+            padding: 0 15px;
+        }
+        input{
+            width: 610px;
+            height: 64px;
+            border: 1px solid $white;
+            background-color: transparent;
+            outline: none;
+            color: white;
+            font-size: 28px;
+            padding: 0 30px;
+        }
+        textarea{
+            width: 610px;
+            height: 103px;
+            border: 1px solid $white;
+            background-color: transparent;
+            outline: none;
+            color: white;
+            font-size: 28px;
+            padding:30px 30px 0 30px;
+        }
+    }
+    &__button{
+        @include font($font-poppins, 36px, 500);
+
+    }
+}
