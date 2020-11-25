@@ -436,12 +436,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 0;
 }
 
-.sort__filter .filter__items:hover {
+.sort__filter .filter__items--active {
   color: #E2B024;
   cursor: pointer;
 }
 
-.sort__filter .filter__items:hover::after {
+.sort__filter .filter__items--active::after {
   content: "";
   position: absolute;
   width: 100%;
