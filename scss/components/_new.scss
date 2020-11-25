@@ -41,11 +41,10 @@
     }
     &__img{
         margin-left: 100px;
-        position: absolute;
-        bottom: -80%;
-        transform: translateY(80%);
+        margin-top: -150px;
     }
     &__circle{
+        z-index: -1;
         width: 375px;
         height: 375px;
         border-radius: 50%;
@@ -104,7 +103,6 @@
        width: 100%;
    }
    .slick-list{
-       overflow-y: hidden;
        overflow-x: hidden;
    }
     .slick-track{
