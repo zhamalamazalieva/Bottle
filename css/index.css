@@ -84,6 +84,13 @@ table {
   width: 100%;
 }
 
+* {
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -179,6 +186,104 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+.header__wrapper {
+  background-color: black;
+}
+
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 0;
+}
+
+.header__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__slogan {
+  color: white;
+}
+
+.header__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  margin-left: 225px;
+  margin-right: 105px;
+}
+
+.header__li {
+  margin-left: 4px;
+}
+
+.header__a {
+  text-decoration: none;
+}
+
+.header__menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  font-family: "ChocolateBox", sans-serif;
+  color: white;
+  padding: 22px 0;
+}
+
+.header__menu .menu__link {
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header__menu .menu__link:hover {
+  color: #E2B024;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__top--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__register {
+  color: white;
+  margin-right: 12px;
+}
+
+.header__icon {
+  margin-left: 30px;
+}
+
 .hero {
   padding-top: 190px;
   color: #FFFFFF;
@@ -220,7 +325,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.5;
+  font-style: normal;
+  max-width: 745px;
   font-style: normal;
   max-width: 745px;
   margin-bottom: 35px;
@@ -682,5 +789,33 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 36px;
+}
+
+.review {
+  background-image: url("/images/Rectangle 12.png");
+}
+
+.review__containner {
+  max-width: 1062px;
+  margin: 0 auto;
+}
+
+.review__blok {
+  text-align: center;
+}
+
+.review__title {
+  margin: 154px 0 58px 0;
+  font-family: "ChocolateBox", sans-serif;
+  color: white;
+}
+
+.review__title__h2 {
+  color: white;
+}
+
+.review__p {
+  width: 800px;
+  color: white;
 }
 /*# sourceMappingURL=index.css.map */

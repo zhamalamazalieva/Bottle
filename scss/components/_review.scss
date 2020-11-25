@@ -1,0 +1,26 @@
+.review{
+    background-image: url('/images/Rectangle\ 12.png');
+
+    &__containner{
+        max-width: 1062px;
+        margin: 0 auto;
+    }
+    &__blok{
+       
+        text-align: center;
+    }
+    &__title{
+        margin: 154px 0 58px 0;
+        font-family: $font-choco;
+        color: white ;
+    }
+    &__title__h2{
+        color: white;
+    }
+    &__p{
+        width: 800px;
+        color: white;
+        }
+}
+
+    
