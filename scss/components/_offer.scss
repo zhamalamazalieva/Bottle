@@ -1,0 +1,74 @@
+.offer {
+  &__title {
+    margin: 150px 0 135px;
+  }
+  &__row{
+      min-width: 0;
+  }
+  &__item{
+      position: relative;
+      margin: 0 15px;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    bottom: 0;
+    left: 6%;
+    min-width: 0;
+  }
+  &__name {
+    @include font($font-choco, 24px, 400);
+    line-height: 1.5;
+  }
+  &__price {
+    @include font($font-choco, 36px, 700);
+    line-height: 54px;
+  }
+  .slick-slider {
+    outline: none;
+    border: none;
+  }
+	.slick-slide.slick-current.slick-active {
+    .slider__active {
+      transform: scale(1.3);
+    }
+  }
+  
+
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-list {
+    width: 100%;
+    overflow: hidden;
+  }
+  .slick-dots {
+    padding-top: 80px;
+    margin: 0 auto;
+    display: flex;
+    // position: absolute;
+  }
+  .slick-dots li {
+    list-style-type: none;
+    margin: 10px;
+  }
+  .slick-dots li button {
+    outline: none;
+    border: transparent;
+    font-size: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $white;
+  }
+  .slick-dots .slick-active button {
+    background-color: $orange;
+  }
+}

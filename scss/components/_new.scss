@@ -37,19 +37,14 @@
         }
     }
     &__item--right{
-        display:flex;
-        align-items: center;
         position: relative;
     }
     &__img{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        height:690px !important;
-        width: 210px !important;
+        margin-left: 100px;
+        margin-top: -150px;
     }
     &__circle{
-        position: relative;
+        z-index: -1;
         width: 375px;
         height: 375px;
         border-radius: 50%;
@@ -58,6 +53,7 @@
         &::before{
             content: "";
             position: absolute;
+            z-index: 1;
             width: 567px;
             height: 206px;
             border-bottom: transparent;
@@ -71,6 +67,7 @@
         &::after{
             content: "";
             position: absolute;
+            z-index: 1;
             width: 567px;
             height: 206px;
             border-top: transparent;
@@ -90,28 +87,30 @@
             border-top: transparent;
             border-bottom: 2px solid $white;
             color: $white;
-            @include font($font-poppins, 20px, 500);
+            @include font($font-poppins,24px, 500);
             line-height: 30px;
         }
         .slider__prev{
             left: -20px;
             bottom: 45%;
-
-
         }
         .slider__next{
-            right: -10px;
+            right: -3%;
             bottom: 45%;
         }
-     
     }
-    .slick-slider .slick-track{
+   .new__slider{
+       width: 100%;
+   }
+   .slick-list{
+       overflow-x: hidden;
+   }
+    .slick-track{
+        width: 50%;
         display: flex;
-        width: 100%;
     }
-    .slick-slide{
-        border:none !important;
-        outline: none !important;
+    .slick-slider{
+        outline: none;
+        border: none;
     }
-
 }
