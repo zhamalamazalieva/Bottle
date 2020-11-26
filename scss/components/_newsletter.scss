@@ -1,0 +1,59 @@
+
+.newsletter{
+        background-color: #18191A;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    &__container{
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+    &__form{
+        margin: 0 auto;
+        width: 570px;
+        height: 64px;
+        border: none;
+    }
+    &__title{
+        margin: 57px 0 24px;
+        font-family: ChocolateBox;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 54px;
+        color: #E2B024;
+    }
+    &__submit{
+        padding: 11px;
+        background: #E2B024;
+        margin-left: -6px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        cursor: pointer;
+        margin-bottom: 3px;
+        border: none;
+
+    }
+    &__gmail{
+        color: wheat;
+        padding: 20px;
+        width: 321px;
+        height: 51px;
+        background-color: black;
+        border: none;
+
+    }
+    &__description{
+        margin-bottom: 69px;
+        color: white;
+        font-family:  sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
