@@ -22,6 +22,15 @@
         &__item{
             margin-top: 25px;
             margin-right: 56px;
+            transition: 0.3s;
+            svg{
+                fill: $orange;
+            }
+            &:hover{
+                svg{
+                    fill:white;
+                }
+            }
         }
        
     }
