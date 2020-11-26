@@ -469,13 +469,13 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 0 95px 0;
-  min-width: 292px;
-  border: 2px solid red;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .sort__img {
   left: 15%;
-  min-height: 365px;
   margin-bottom: 15px;
 }
 
@@ -489,6 +489,7 @@ img {
   background-color: #E2B024;
   position: absolute;
   left: 0;
+  top: 0;
   width: 80px;
   height: 40px;
   display: -webkit-box;
@@ -736,7 +737,7 @@ img {
   height: 100%;
 }
 
-.events #more {
+.events #events__more {
   display: none;
 }
 
@@ -870,6 +871,11 @@ img {
   color: white;
   font-size: 28px;
   padding: 0 30px;
+}
+
+.contact__label input:focus {
+  background-color: transparent;
+  color: #FFFFFF;
 }
 
 .contact__label textarea {

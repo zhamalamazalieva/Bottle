@@ -15,8 +15,22 @@ function myFunction() {
       linkText.innerHTML = "Read less";
       moreText.style.display = "inline";
     }
-  }
+}
+function myEventsFunction() {
+  var dots = document.getElementById("events__dots");
+  var moreText = document.getElementById("events__more");
+  var linkText = document.getElementById("myEventsLink");
 
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    linkText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    linkText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
 /*Function for slider in 'NEW'
 =============================================*/
   $('.new__slider').slick({

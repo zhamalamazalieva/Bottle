@@ -47,13 +47,11 @@
         flex-direction: column;
         align-items: center;
         margin:0 0 95px 0;
-        min-width: 292px;
-        border: 2px solid red;
+        // border: 2px solid red;
+        justify-content: flex-end;
     }
     &__img{
-        // position: absolute;
         left: 15%;
-        min-height: 365px;
         margin-bottom:15px;
 
     }
@@ -65,6 +63,7 @@
         background-color: $orange;
         position: absolute;
         left: 0;
+        top: 0;
         width: 80px;
         height: 40px;
         display: flex;
