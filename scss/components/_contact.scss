@@ -53,13 +53,22 @@
             padding: 0 15px;
         }
         input{
+<<<<<<< HEAD
             
+=======
+            width: 610px;
+            height: 55px;
+>>>>>>> 99d6c3f4cc0f4f68e4441fbb449ede73af369a8f
             border: 1px solid $white;
             background-color: transparent;
             outline: none;
             color: white;
             font-size: 28px;
             padding: 0 30px;
+            &:focus{
+                background-color: transparent;
+                color: $white;
+            }
         }
         textarea{
             width: 610px;
