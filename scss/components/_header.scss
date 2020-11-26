@@ -1,0 +1,68 @@
+.header{
+    &__wrapper{
+        background-color: black;
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 0;
+    }
+    &__login{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    &__slogan{
+        color: white;
+       
+    }
+    &__icons{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    &__logo{
+       margin-left: 225px;
+       margin-right: 105px;
+    }
+    &__li{
+        margin-left: 4px;
+    }
+
+    &__a{
+        text-decoration: none;
+    }
+    &__menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        font-family: $font-choco;
+        color:white;
+        padding: 22px 0;
+        .menu__link{
+            color: white;
+            transition: 0.3s;
+                color: $orange;
+                border-bottom: 1px solid red;
+            }
+        }
+    
+
+    &__list{
+        display: flex;
+    }
+    &__top--right{
+        display: flex;
+    }
+    &__register{
+    color:white;
+     margin-right: 12px;
+    }
+    &__icon{
+    margin-left: 30px;
+    }
+
+}
