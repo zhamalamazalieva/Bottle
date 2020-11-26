@@ -945,63 +945,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 36px;
 }
 
-.review {
-  background-image: url("/images/Rectangle 12.png");
-}
-
-.review__containner {
-  max-width: 1062px;
-  margin: 0 auto;
-}
-
-.review__blok {
-  text-align: center;
-}
-
-.review__title {
-  margin: 154px 0 58px 0;
-  font-family: "ChocolateBox", sans-serif;
-  color: white;
-}
-
-.review__title__h2 {
-  color: white;
-}
-
-.review__p {
-  width: 800px;
-  color: white;
-}
-
-.newsletter {
-  background-color: #18191A;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .newsletter__container {
   max-width: 1120px;
   margin: 0 auto;
-}
-
-.newsletter__form {
-  margin: 0 auto;
-  width: 570px;
-  height: 64px;
-  border: none;
+  height: 100vh;
 }
 
 .newsletter__title {
-  margin: 57px 0 24px;
   font-family: ChocolateBox;
   font-style: normal;
   font-weight: normal;
@@ -1010,36 +960,26 @@ h1, h2, h3, h4, h5, h6 {
   color: #E2B024;
 }
 
+.newsletter__form {
+  position: absolute;
+  width: 570px;
+  height: 64px;
+  left: 675px;
+  top: 7256px;
+  background: #000000;
+}
+
 .newsletter__submit {
-  padding: 11px;
+  border-radius: 12px;
+  position: absolute;
+  width: 127px;
+  height: 64px;
+  left: 1119px;
+  top: 7256px;
   background: #E2B024;
-  margin-left: -6px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 27px;
-  cursor: pointer;
-  margin-bottom: 3px;
-  border: none;
 }
 
 .newsletter__gmail {
   color: wheat;
-  padding: 20px;
-  width: 321px;
-  height: 51px;
-  background-color: black;
-  border: none;
-}
-
-.newsletter__description {
-  margin-bottom: 69px;
-  color: white;
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
 }
 /*# sourceMappingURL=index.css.map */

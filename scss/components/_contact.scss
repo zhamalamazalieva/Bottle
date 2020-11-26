@@ -22,6 +22,15 @@
         &__item{
             margin-top: 25px;
             margin-right: 56px;
+            transition: 0.3s;
+            svg{
+                fill: $orange;
+            }
+            &:hover{
+                svg{
+                    fill:white;
+                }
+            }
         }
        
     }
@@ -41,12 +50,10 @@
             position: absolute;
             top: -15px;
             left: 35px;
-            background-color:black;
             padding: 0 15px;
         }
         input{
-            width: 610px;
-            height: 64px;
+            
             border: 1px solid $white;
             background-color: transparent;
             outline: none;

@@ -45,11 +45,11 @@
         .menu__link{
             color: white;
             transition: 0.3s;
-            &:hover{
                 color: $orange;
+                border-bottom: 1px solid red;
             }
         }
-    }
+    
 
     &__list{
         display: flex;
@@ -64,4 +64,5 @@
     &__icon{
     margin-left: 30px;
     }
+
 }
