@@ -1,0 +1,55 @@
+.header {
+  &__top {
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+  }
+  &__list,
+  &__icons,
+  &__top--right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__slogan,.list__link {
+    @include font($font-poppins, 14px, 400);
+    line-height: 18px;
+    color: $white;
+  }
+  &__icon {
+    margin-left: 30px;
+  }
+  .list__item {
+    margin-left: 46px;
+    transition: .3s;
+    .list__link{
+        &:hover{
+            color: $orange;
+        }
+    }
+  }
+  &__logo {
+    margin-right: -220px;
+  }
+}
+.nav {
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    font-family: $font-choco;
+    color: white;
+    padding: 22px 0;
+    .menu__link {
+      color: white;
+      transition: 0.3s;
+      color: $orange;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-bottom: 1px solid $orange;
+      }
+    }
+  }
+}

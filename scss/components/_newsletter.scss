@@ -1,0 +1,43 @@
+.newsletter{
+    background-color: $light-dark;
+    padding-bottom: 60px;
+    &__title{
+        padding: 60px 0 24px;
+        color: $orange;
+     
+    }  
+    &__description{
+        @include font($font-poppins, 18px, 400);
+        line-height: 1.5;
+        color:$white;
+        margin-bottom: 69px;
+        text-align: center;
+    }
+    &__form{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    &__email{
+        background-color: $black;
+        padding: 18px 220px 18px 35px;
+        outline: none;
+        border: none;
+        color: $white;
+        @include font($font-poppins, 18px, 400);
+
+        &::placeholder{
+            color: $white;
+            @include font($font-poppins, 18px, 400);
+            display: flex;
+
+        }
+    }
+    &__button{
+        @include font($font-poppins, 18px, 400);
+        color: $white;
+        padding: 18px 20px;
+        outline: none;
+        border: none;
+    }
+}

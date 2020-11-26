@@ -37,10 +37,13 @@ function myEventsFunction() {
    arrows: true,
    slidesToShow: 1,
    slidesToScroll: 1,
+  //  autoplay: true,
+  //  autoplaySpeed: 2000,
    prevArrow:'.slider__prev',
    nextArrow:'.slider__next'
-  });
 
+  })
+          
 /*Function for slider in 'OFFER'
 =============================================*/
 
