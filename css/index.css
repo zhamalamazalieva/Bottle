@@ -883,8 +883,15 @@ img {
   fill: #FFFFFF;
 }
 
-.contact__form {
-  width: 100%;
+.contact__input {
+  width: 200%;
+  height: 55px;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 0 30px;
 }
 
 .contact__label {
@@ -897,7 +904,6 @@ img {
           flex-direction: column;
   position: relative;
   margin-bottom: 30px;
-  width: 200%;
 }
 
 .contact__label span {
@@ -913,27 +919,8 @@ img {
   background-color: black;
 }
 
-.contact__label input {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  width: 610px;
-  height: 55px;
->>>>>>> 99d6c3f4cc0f4f68e4441fbb449ede73af369a8f
-=======
-  width: 100%;
-  height: 55px;
->>>>>>> 559328678c0fe2aeca9339c006c3b75767ff2140
-  border: 1px solid #FFFFFF;
-  background-color: transparent;
-  outline: none;
-  color: white;
-  font-size: 20px;
-  padding: 0 30px;
-}
-
 .contact__label textarea {
-  width: 100%;
+  width: 200%;
   height: 103px;
   border: 1px solid #FFFFFF;
   background-color: transparent;
@@ -947,34 +934,7 @@ img {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 36px;
-}
-
-.review {
-  background-image: url("/images/Rectangle 12.png");
-}
-
-.review__containner {
-  max-width: 1062px;
-  margin: 0 auto;
-}
-
-.review__blok {
-  text-align: center;
-}
-
-.review__title {
-  margin: 154px 0 58px 0;
-  font-family: "ChocolateBox", sans-serif;
-  color: white;
-}
-
-.review__title__h2 {
-  color: white;
-}
-
-.review__p {
-  width: 800px;
-  color: white;
+  border: 2px solid transparent;
 }
 
 .newsletter {
