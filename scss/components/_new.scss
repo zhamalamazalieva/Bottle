@@ -1,0 +1,117 @@
+.new{
+    background-color: $light-dark;
+    &__row{
+        padding:267px 0;
+    }
+    &__item{
+        padding-right: 65px;
+    }
+    &__suptitle{
+        @include font($font-poppins, 20px, 200);
+        line-height: 1.5;
+        color: $white;
+        margin-bottom: 47px;
+    }
+    &__title{
+        @include font($font-choco, 74px, 400);
+        line-height: 43px;
+        color: $orange;
+        margin-bottom: 8px;
+    }
+    &__subtitle{
+        @include font($font-poppins, 36px, 400);
+        line-height: 1.5;
+        color: $white;
+        margin-bottom: 52px;
+    }
+    &__description{
+        @include font($font-poppins, 18px, 200);
+        line-height: 1.5;
+        color: $white;
+        margin-bottom: 60px;
+    }
+    &__buttons{
+        @include font($font-poppins, 18px, 400);
+        .new__button:first-child{
+            margin-right: 60px;
+        }
+    }
+    &__item--right{
+        display:flex;
+        align-items: center;
+        position: relative;
+    }
+    &__img{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height:690px !important;
+        width: 210px !important;
+    }
+    &__circle{
+        position: relative;
+        width: 375px;
+        height: 375px;
+        border-radius: 50%;
+        background-color: $orange;
+        margin-left: 100px;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 567px;
+            height: 206px;
+            border-bottom: transparent;
+            border-top: 10px solid $orange;
+            border-right: 10px solid $orange;
+            border-left: 10px solid $orange;
+            top: -70px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 567px;
+            height: 206px;
+            border-top: transparent;
+            border-bottom: 10px solid $orange;
+            border-right: 10px solid $orange;
+            border-left: 10px solid $orange;
+            bottom: -70px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__arrows{
+        .slider__prev, .slider__next{
+            position:absolute;
+            border-bottom: transparent;
+            border-left: transparent;
+            border-top: transparent;
+            border-bottom: 2px solid $white;
+            color: $white;
+            @include font($font-poppins, 20px, 500);
+            line-height: 30px;
+        }
+        .slider__prev{
+            left: -20px;
+            bottom: 45%;
+
+
+        }
+        .slider__next{
+            right: -10px;
+            bottom: 45%;
+        }
+     
+    }
+    .slick-slider .slick-track{
+        display: flex;
+        width: 100%;
+    }
+    .slick-slide{
+        border:none !important;
+        outline: none !important;
+    }
+
+}

@@ -35,12 +35,17 @@ h1, h2, h3, h4, h5, h6{
 
 .btn{
     padding: 22px 48px;
-    background-color: $orange;
     @include font($font-poppins, 24px, 500);
     border: 1px solid transparent;
-    &:hover{
-        background-color: transparent;
-        border: 1px solid $orange;
+    color: black;
+    &--orange{
+        background-color: $orange;
+        transition: 0.3s;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid $orange;
+            color: $white;
+        }
     }
 }
 .orange{
