@@ -1080,4 +1080,10 @@ img {
   margin-bottom: 29px;
   color: white;
 }
+
+@media screen and (max-width: 375px) {
+  .header__bottom {
+    display: none;
+  }
+}
 /*# sourceMappingURL=index.css.map */
