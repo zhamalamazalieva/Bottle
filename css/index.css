@@ -73,7 +73,7 @@ table {
 }
 
 .col-7 {
-  width: 58.33333333;
+  width: 58.33333333%;
 }
 
 .col-8 {
@@ -616,6 +616,128 @@ img {
   color: #E2B024;
 }
 
+.sort__link {
+  margin-bottom: 170px;
+}
+
+.review {
+  background-image: url("../images/png/reviewbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 774px;
+  text-align: center;
+  position: relative;
+}
+
+.review__opacity {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  background-color: black;
+  opacity: .5;
+  width: 100%;
+  min-height: 774px;
+}
+
+.review__inner {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  left: 0;
+  top: 0;
+}
+
+.review__title {
+  padding: 150px 0 60px;
+}
+
+.review__img {
+  width: 156px;
+  height: 156px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 5px solid #FFFFFF;
+  overflow: hidden;
+}
+
+.review__img img {
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.review__name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 2;
+  color: #FFFFFF;
+  margin: 30px 0;
+}
+
+.review__description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.review .slick-slide {
+  border: none !important;
+  outline: none !important;
+}
+
+.review .slick-list {
+  overflow: hidden;
+}
+
+.review .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.review .slick-dots {
+  padding-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.review .slick-dots li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.review .slick-dots li button {
+  outline: none;
+  border: transparent;
+  font-size: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.review .slick-dots .slick-active button {
+  background-color: #E2B024;
+}
+
 .offer__title {
   margin: 150px 0 135px;
 }
@@ -861,7 +983,7 @@ img {
 }
 
 .contact__item {
-  margin-bottom: 46px;
+  margin-bottom: 42px;
 }
 
 .contact__description {
@@ -903,7 +1025,6 @@ img {
           flex-direction: column;
   position: relative;
   margin-bottom: 30px;
-  width: 200%;
 }
 
 .contact__label span {
@@ -928,7 +1049,6 @@ img {
   outline: none;
   color: white;
   font-size: 20px;
-  padding: 0 30px;
 }
 
 .contact__label textarea {
@@ -939,7 +1059,6 @@ img {
   outline: none;
   color: #FFFFFF;
   font-size: 20px;
-  padding: 30px 30px 0 30px;
 }
 
 .contact__button {

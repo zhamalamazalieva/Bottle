@@ -1,26 +1,97 @@
 .review{
-    background-image: url('/images/Rectangle\ 12.png');
+    background-image: url('../images/png/reviewbg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 774px;
+    text-align: center;
+    position: relative;
 
-    &__containner{
-        max-width: 1062px;
-        margin: 0 auto;
-    }
-    &__blok{
-       
-        text-align: center;
+    &__opacity{
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top:0;
+        background-color: black;
+        opacity: .5;
+        width: 100%;
+        min-height: 774px;
+        }
+    &__inner{
+        position: absolute;
+        width: 100%;
+        z-index: 5;
+        left: 0;
+        top:0;
     }
     &__title{
-        margin: 154px 0 58px 0;
-        font-family: $font-choco;
-        color: white ;
+        padding: 150px 0 60px;
     }
-    &__title__h2{
-        color: white;
-    }
-    &__p{
-        width: 800px;
-        color: white;
+    &__img{
+        width: 156px;
+        height: 156px;
+        border-radius: 50%;
+        margin: 0 auto;
+        border: 5px solid $white;
+        overflow: hidden;
+      
+        img{
+            min-height: 100%;
+            min-width: 100%;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
+    }
+    &__name{
+        @include font($font-poppins, 24px, 700);
+        line-height: 2;
+        color: $white;
+        margin: 30px 0;
+    }
+    &__description{
+        @include font($font-poppins, 15px, 400);
+        line-height: 1.5;
+        color: $white;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .slick-slide {
+        border: none !important;
+        outline: none !important;
+      }
+      .slick-list {
+        overflow: hidden;
+      }
+  
+    .slick-track{
+        display: flex;
+        width: 100%;
+    }
+      .slick-dots {
+        padding-top: 35px;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .slick-dots li {
+        list-style-type: none;
+        margin: 10px;
+      }
+      .slick-dots li button {
+        outline: none;
+        border: transparent;
+        font-size: 0;
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $white;
+      }
+      .slick-dots .slick-active button {
+        background-color: $orange;
+      }
 }
-
     
