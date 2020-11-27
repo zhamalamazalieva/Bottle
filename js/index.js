@@ -37,10 +37,10 @@ function myEventsFunction() {
    arrows: true,
    slidesToShow: 1,
    slidesToScroll: 1,
-  //  autoplay: true,
-  //  autoplaySpeed: 2000,
    prevArrow:'.slider__prev',
-   nextArrow:'.slider__next'
+   nextArrow:'.slider__next',
+   infinite:true,
+
 
   })
           
@@ -62,6 +62,7 @@ $('.events__slider').slick({
   arrows:true,
   slidesToShow: 1,
   slidesToScroll: 1,
+  infinite:true,
 });
 
 /*Function for slider FILTER-IS-ACTIVE in 'SORT'
