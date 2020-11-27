@@ -54,12 +54,18 @@
         }
         input{
             
+            width: 610px;
+            height: 55px;
             border: 1px solid $white;
             background-color: transparent;
             outline: none;
             color: white;
             font-size: 28px;
             padding: 0 30px;
+            &:focus{
+                background-color: transparent;
+                color: $white;
+            }
         }
         textarea{
             width: 610px;
