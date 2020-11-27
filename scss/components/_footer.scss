@@ -1,0 +1,36 @@
+.footer{
+    &__wrapper{
+        display: flex;
+        margin-bottom: 92px;
+    }
+    &__title{
+        @include font($font-choco, 24px, 400);
+        color:$orange ;
+        margin-top: 133px;
+        margin-bottom: 23px;
+    }
+    &__ul{
+        margin: 15px;
+    }
+    &__link{
+        margin: 10px;
+        color: white;
+        $font-poppins:"Poppins", sans-serif;
+        
+    }
+    &__foter{
+        color: white;
+        text-align: center;
+        border-top: 2px solid white;
+        padding-top: 22px;
+        margin-bottom: 44px;
+    }
+    &__icons{
+       margin-right: 25px;
+       margin-bottom: 29px;
+    }
+    &__linke{
+        margin-bottom: 29px;
+        color: white;
+    }
+}
