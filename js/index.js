@@ -55,6 +55,17 @@ $('.offer__slider').slick({
   centerMode: true
 })
      
+/*Function for slider in 'REVIEW'
+=============================================*/
+
+$('.review__slider').slick({
+  arrows:false,
+  dots:true,
+  slidesToShow:1,
+  slidesToScroll:1,
+  centerMode: true,
+  cssEase: 'linear',
+})
 /*Function for slider in 'EVENTS'
 =============================================*/
 $('.events__slider').slick({
@@ -96,7 +107,7 @@ function sortFilter(index) {
     if (!ayday.hasAttribute(filterItemsName[index])) {
       ayday.style.display = 'none';
     } else {
-      ayday.style.display = 'block';
+      ayday.style.display = 'flex';
     }
   });
 }

@@ -8,7 +8,7 @@
 
     }
     &__item{
-        margin-bottom: 46px;
+        margin-bottom: 42px;
     }
     &__description{
         line-height: 2;
@@ -34,19 +34,6 @@
         }
        
     }
-    &__form{
-    }
-    &__input{
-        width: 200%;
-        height: 55px;
-        border: 1px solid $white;
-        background-color: transparent;
-        outline: none;
-        color:$white;
-        font-size: 20px;
-        padding: 0 30px;
-     
-    }
     &__label{
         display: flex;
         flex-direction: column;
@@ -63,15 +50,27 @@
             padding: 0 15px;
             background-color:$black;
         }
+        input{
+            
+            width: 100%;
+            height: 55px;
+            border: 1px solid $white;
+            background-color: transparent;
+            outline: none;
+            color: white;
+            font-size: 20px;
+            // padding: 0 30px;
+         
+        }
         textarea{
-            width: 200%;
+            width: 100%;
             height: 103px;
             border: 1px solid $white;
             background-color: transparent;
             outline: none;
             color:$white;
             font-size: 20px;
-            padding:30px 30px 0 30px;
+            // padding:30px 30px 0 30px;
         }
        
      
