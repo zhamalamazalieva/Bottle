@@ -8,7 +8,7 @@
 
     }
     &__item{
-        margin-bottom: 46px;
+        margin-bottom: 42px;
     }
     &__description{
         line-height: 2;
@@ -34,15 +34,11 @@
         }
        
     }
-    &__form{
-        width: 100%;
-    }
     &__label{
         display: flex;
         flex-direction: column;
         position: relative;
         margin-bottom: 30px;
-        width: 200%;
 
         span{
             @include font($font-poppins, 20px, 400);
@@ -56,7 +52,6 @@
         }
         input{
             
-            width: 610px;
             width: 100%;
             height: 55px;
             border: 1px solid $white;
@@ -64,7 +59,7 @@
             outline: none;
             color: white;
             font-size: 20px;
-            padding: 0 30px;
+            // padding: 0 30px;
          
         }
         textarea{
@@ -75,11 +70,14 @@
             outline: none;
             color:$white;
             font-size: 20px;
-            padding:30px 30px 0 30px;
+            // padding:30px 30px 0 30px;
         }
+       
+     
     }
     &__button{
         @include font($font-poppins, 36px, 500);
+        border: 2px solid transparent;
 
     }
 }

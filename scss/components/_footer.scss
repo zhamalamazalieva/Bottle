@@ -1,22 +1,25 @@
 .footer{
-    &__wrapper{
+    &__top{
         display: flex;
-        margin-bottom: 92px;
+        margin-bottom: 90px;
     }
     &__title{
         @include font($font-choco, 24px, 400);
         color:$orange ;
-        margin-top: 133px;
-        margin-bottom: 23px;
+        margin: 133px 0 42px;
+        text-transform: uppercase;
     }
-    &__ul{
-        margin: 15px;
-    }
+   
     &__link{
-        margin: 10px;
-        color: white;
-        $font-poppins:"Poppins", sans-serif;
-        
+        margin-bottom: 25px;
+        color: $white;
+        @include font($font-poppins, 16px, 400);
+
+    }
+    &__item{
+        svg{
+            margin-right: 15px;
+        }
     }
     &__foter{
         color: white;
@@ -25,12 +28,32 @@
         padding-top: 22px;
         margin-bottom: 44px;
     }
-    &__icons{
-       margin-right: 25px;
-       margin-bottom: 29px;
+    &__social-icons{
+        align-items: center;
+        margin:-10px 0 35px;
+        .social-icons__item{
+            margin-right: 45px;
+        }
+        svg{
+            fill:$orange;
+            width: 24px;
+            height: 24px;
+            &:hover{
+                fill: $white;
+            }
+        }
+        
     }
-    &__linke{
-        margin-bottom: 29px;
-        color: white;
+    &__bottom{
+        border-top: 2px solid $white;
+        border-bottom: transparent;
+        border-left: transparent;
+        border-right:transparent;
+        color: $white;
+        @include font($font-poppins, 16px, 400);
+        text-align: center;
+        padding: 22px 0 44px;
+
+
     }
 }

@@ -37,10 +37,10 @@ function myEventsFunction() {
    arrows: true,
    slidesToShow: 1,
    slidesToScroll: 1,
-  //  autoplay: true,
-  //  autoplaySpeed: 2000,
    prevArrow:'.slider__prev',
-   nextArrow:'.slider__next'
+   nextArrow:'.slider__next',
+   infinite:true,
+
 
   })
           
@@ -55,6 +55,17 @@ $('.offer__slider').slick({
   centerMode: true
 })
      
+/*Function for slider in 'REVIEW'
+=============================================*/
+
+$('.review__slider').slick({
+  arrows:false,
+  dots:true,
+  slidesToShow:1,
+  slidesToScroll:1,
+  centerMode: true,
+  cssEase: 'linear',
+})
 /*Function for slider in 'EVENTS'
 =============================================*/
 $('.events__slider').slick({
@@ -62,6 +73,7 @@ $('.events__slider').slick({
   arrows:true,
   slidesToShow: 1,
   slidesToScroll: 1,
+  infinite:true,
 });
 
 /*Function for slider FILTER-IS-ACTIVE in 'SORT'
@@ -95,27 +107,10 @@ function sortFilter(index) {
     if (!ayday.hasAttribute(filterItemsName[index])) {
       ayday.style.display = 'none';
     } else {
-      ayday.style.display = 'block';
+      ayday.style.display = 'flex';
     }
   });
 }
 
-// function activeFinder(i = 1) {
-//   let activeSliders = document.querySelectorAll('.slick-active.col-4');
-//   activeSliders.forEach(item => {
-//     item.classList.remove('slick-big')
-//   })
-//   activeSliders[i].classList.toggle('slick-big')
-// }
-// activeFinder()
-// const buttons = document.querySelectorAll('.offer button');
-// console.log(buttons)
-// buttons.forEach((item,index) => {
-//   item.addEventListener('click', () => {
-//     let counter = index;
-//     console.log(counter)
-//     buttons[index]
-//     console.log(index)
-//     activeFinder(2)
-//   })
-// })
+
+

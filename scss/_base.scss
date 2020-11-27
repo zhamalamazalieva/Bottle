@@ -73,7 +73,9 @@ img {
     @include font($font-choco, 16px, 300);
     line-height: 9px;
     color: $orange;
-    text-transform: uppercase;
     padding: 8px 0;
 
+}
+.uppercase{
+    text-transform: uppercase;
 }
