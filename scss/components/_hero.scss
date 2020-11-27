@@ -1,0 +1,39 @@
+.hero{
+    padding-top: 190px;
+    color: $white;
+    text-align: center;
+    &__row{
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }   
+    &__suptitle{
+        @include font($font-choco, 24px, 400);
+        line-height: 14px;
+        font-style: normal;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    &__title{
+        @include font($font-choco, 96px, 500);
+        line-height: 55px;
+        margin: 32px 0 32px;
+    }
+    &__description{
+        @include font($font-poppins, 16px, 300);
+        line-height: 1.5;
+        font-style: normal;
+        max-width: 745px;
+      
+        font-style: normal;
+        max-width: 745px;
+        margin-bottom: 35px;
+        #more{
+            display: none;
+        }
+    }
+    &__link{
+        margin-bottom: 30px;
+    }
+   
+}
