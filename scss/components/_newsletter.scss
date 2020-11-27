@@ -1,59 +1,43 @@
-
 .newsletter{
-        background-color: #18191A;
-        display: flex;
-        justify-content: center;
+    background-color: $light-dark;
+    padding-bottom: 60px;
+    &__title{
+        padding: 60px 0 24px;
+        color: $orange;
+     
+    }  
+    &__description{
+        @include font($font-poppins, 18px, 400);
+        line-height: 1.5;
+        color:$white;
+        margin-bottom: 69px;
         text-align: center;
-        flex-direction: column;
-    &__container{
-        max-width: 1120px;
-        margin: 0 auto;
     }
     &__form{
-        margin: 0 auto;
-        width: 570px;
-        height: 64px;
-        border: none;
+        display: flex;
+        justify-content: center;
+        align-items:center;
     }
-    &__title{
-        margin: 57px 0 24px;
-        font-family: ChocolateBox;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 48px;
-        line-height: 54px;
-        color: #E2B024;
-    }
-    &__submit{
-        padding: 11px;
-        background: #E2B024;
-        margin-left: -6px;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 27px;
-        cursor: pointer;
-        margin-bottom: 3px;
+    &__email{
+        background-color: $black;
+        padding: 18px 220px 18px 35px;
+        outline: none;
         border: none;
+        color: $white;
+        @include font($font-poppins, 18px, 400);
 
-    }
-    &__gmail{
-        color: wheat;
-        padding: 20px;
-        width: 321px;
-        height: 51px;
-        background-color: black;
-        border: none;
+        &::placeholder{
+            color: $white;
+            @include font($font-poppins, 18px, 400);
+            display: flex;
 
+        }
     }
-    &__description{
-        margin-bottom: 69px;
-        color: white;
-        font-family:  sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 27px;
+    &__button{
+        @include font($font-poppins, 18px, 400);
+        color: $white;
+        padding: 18px 20px;
+        outline: none;
+        border: none;
     }
 }
