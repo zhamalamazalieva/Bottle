@@ -429,7 +429,8 @@ img {
           transform: translateX(-50%);
 }
 
-.new__arrows .slider__prev, .new__arrows .slider__next {
+.new__arrows .slider__prev,
+.new__arrows .slider__next {
   position: absolute;
   border-bottom: transparent;
   border-left: transparent;
