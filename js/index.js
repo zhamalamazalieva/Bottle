@@ -112,22 +112,5 @@ function sortFilter(index) {
   });
 }
 
-// function activeFinder(i = 1) {
-//   let activeSliders = document.querySelectorAll('.slick-active.col-4');
-//   activeSliders.forEach(item => {
-//     item.classList.remove('slick-big')
-//   })
-//   activeSliders[i].classList.toggle('slick-big')
-// }
-// activeFinder()
-// const buttons = document.querySelectorAll('.offer button');
-// console.log(buttons)
-// buttons.forEach((item,index) => {
-//   item.addEventListener('click', () => {
-//     let counter = index;
-//     console.log(counter)
-//     buttons[index]
-//     console.log(index)
-//     activeFinder(2)
-//   })
-// })
+
+
