@@ -93,19 +93,55 @@ img {
     background-color:$black;
     opacity: .8;
     transition: 0.7s;
+
     &__content{
         position: relative;
         top: 20%;
         width: 100%;
-        text-align: center;
         margin-top: 30px;
+        margin-left: 100px;
         a{
            color:$orange;
+           position: relative;
            @include font($font-choco, 16px, 400);
            line-height: 1.5;
            padding: 10px;
-           transition: 0.3s;
+           transition: 0.4s;
            &:hover, &:focus {
+            &::before{
+                content: '';
+                position: absolute;
+                height: 0;
+                width: 0;
+                background-color: $white;
+                left: -55px;
+                top: 50%;
+                transition: 0.4s;
+                animation: example .3s forwards;
+                @keyframes example{
+                    0%{
+                        width: 0;
+                        height: 0;
+                    }
+                    25%{
+                        width:15px;
+                        height: 2px;
+                    }
+                    50%{
+                        width: 25px;
+                        height: 2px;
+                    }
+                    75%{
+                        width: 35px;
+                        height: 2px;
+                    }
+                    100%{
+                        width: 45px;
+                        height: 2px;
+                    }
+                }
+            }
+    
             color: $white;
            }
         }
