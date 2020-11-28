@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     box-sizing: border-box;
     background-color:$black;
@@ -79,3 +82,43 @@ img {
 .uppercase{
     text-transform: uppercase;
 }
+.overlay{
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    z-index: 15;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    background-color:$black;
+    opacity: .8;
+    transition: 0.7s;
+    &__content{
+        position: relative;
+        top: 20%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        a{
+           color:$orange;
+           @include font($font-choco, 16px, 400);
+           line-height: 1.5;
+           padding: 10px;
+           transition: 0.3s;
+           &:hover, &:focus {
+            color: $white;
+           }
+        }
+    }
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 22px;
+    right: 45px;
+    font-size: 45px;
+    color:$orange;
+    transition: 0.3;
+    &:hover, &:focus {
+        color: $white;
+       }
+  }

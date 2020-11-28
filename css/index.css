@@ -84,6 +84,10 @@ table {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -198,6 +202,57 @@ img {
   text-transform: uppercase;
 }
 
+.overlay {
+  position: fixed;
+  width: 0%;
+  height: 100%;
+  z-index: 15;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  background-color: black;
+  opacity: .8;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.overlay__content {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay__content a {
+  color: #E2B024;
+  font-family: "ChocolateBox", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.overlay__content a:hover, .overlay__content a:focus {
+  color: #FFFFFF;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 22px;
+  right: 45px;
+  font-size: 45px;
+  color: #E2B024;
+  -webkit-transition: 0.3;
+  transition: 0.3;
+}
+
+.overlay .closebtn:hover, .overlay .closebtn:focus {
+  color: #FFFFFF;
+}
+
 .header__top {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -255,16 +310,16 @@ img {
           justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   border-top: 1px solid rgba(255, 255, 255, 0.6);
-  font-family: "ChocolateBox", sans-serif;
-  color: white;
   padding: 22px 0;
 }
 
 .nav__menu .menu__link {
-  color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #E2B024;
+  font-family: "ChocolateBox", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   border-bottom: 1px solid transparent;
 }
 
@@ -635,7 +690,7 @@ img {
 
 .review__opacity {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   left: 0;
   top: 0;
   background-color: black;
@@ -647,7 +702,7 @@ img {
 .review__inner {
   position: absolute;
   width: 100%;
-  z-index: 5;
+  z-index: 2;
   left: 0;
   top: 0;
 }
@@ -926,6 +981,11 @@ img {
   height: 100%;
 }
 
+.events i {
+  color: white;
+  font-size: 65px;
+}
+
 .events .slick-initialized .slick-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -953,21 +1013,28 @@ img {
   outline: none;
   border: none;
   z-index: 55;
-  background-image: url("/images/svg/arrow.svg");
-  width: 84px;
-  height: 84px;
-  background-repeat: no-repeat;
-  background-color: transparent;
 }
 
-.events .slick-prev {
+.events .slick-arrow svg {
+  stroke: #E2B024;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.events .slick-arrow svg:hover {
+  stroke: #FFFFFF;
+}
+
+.events .prev__arrow {
   left: -150px;
   top: 78%;
   -webkit-transform: translateY(-78%);
           transform: translateY(-78%);
+  color: white;
+  font-size: 50px;
 }
 
-.events .slick-next {
+.events .next__arrow {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   right: -150px;
@@ -1100,10 +1167,11 @@ img {
 
 .newsletter__email {
   background-color: black;
-  padding: 18px 220px 18px 35px;
+  padding: 18px 35px 18px 35px;
   outline: none;
   border: none;
   color: #FFFFFF;
+  width: 350px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;

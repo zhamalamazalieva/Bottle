@@ -1,4 +1,8 @@
 .header {
+  // position: fixed;
+  // width: 100%;
+  // background-color: $black;
+  // z-index: 5;
   &__top {
     align-items: center;
     justify-content: space-between;
@@ -38,13 +42,11 @@
     justify-content: space-between;
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     border-top: 1px solid rgba(255, 255, 255, 0.6);
-    font-family: $font-choco;
-    color: white;
     padding: 22px 0;
     .menu__link {
-      color: white;
       transition: 0.3s;
       color: $orange;
+      @include font($font-choco, 16px, 400);
       border-bottom: 1px solid transparent;
 
       &:hover {

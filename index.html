@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" sizes="16x16" href="./images/png/logo.png">
     <title>Drinks</title>
 </head>
@@ -51,12 +52,25 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="header__icon" href="">
+                                <span class="header__icon" onclick="openNav()">
                                     <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="white" />
                                     </svg>
-                                </a>
+                                </span>
+                                <nav id="myNav" class="overlay">
+                                    <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
+                                    <ul class="overlay__content">
+                                        <li class="overlay__item"><a href="#new" class="overlay__link">New Wines</a></li>
+                                        <li class="overlay__item"><a href="#sort" class="overlay__link">Futured Products</a></li>
+                                        <li class="overlay__item"><a href="#review" class="overlay__link">Client Review</a></li>
+                                        <li class="overlay__item"><a href="#offer" class="overlay__link">Amazing Offer</a></li>
+                                        <li class="overlay__item"><a href="#events" class="overlay__link">Featured Events</a></li>
+                                        <li class="overlay__item"><a href="#contact" class="overlay__link">Contact Us</a></li>
+                                        <li class="overlay__item"><a href="#newsletter" class="overlay__link">Newsletter</a></li>
+                                    </ul>
+
+                                </nav>
                             </li>
                         </ul>
                     </div>
@@ -80,7 +94,7 @@
     <!------------------------------Main----------------------------------->
     <main class="main">
         <!--------------------------Hero----------------------------------->
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container">
                 <div class="hero__row row">
                     <span class="hero__suptitle">The Experlence of Generations</span>
@@ -103,7 +117,7 @@
             </div>
         </section>
         <!--------------------------New------------------------------------>
-        <section class="new">
+        <section class="new" id="new">
             <div class="container">
                 <div class="new__row row">
                     <div class="col-6">
@@ -140,7 +154,7 @@
             </div>
         </section>
         <!-------------------------Sort------------------------------------>
-        <section class="sort">
+        <section class="sort" id="sort">
             <div class="container">
                 <div class="column align-items">
                     <h2 class="sort__title section__title">Featured <span class="orange">Products</span></h2>
@@ -255,7 +269,7 @@
 
         </section>
         <!------------------------Review----------------------------------->
-        <section class="review">
+        <section class="review" id="review">
             <div class="container">
                 <div class="review__inner">
                     <h2 class="review__title section__title">Client <span class="orange">Review</span></h2>
@@ -308,7 +322,7 @@
             <div class="review__opacity"></div>
         </section>
         <!-------------------------Offer----------------------------------->
-        <section class="offer">
+        <section class="offer" id="offer">
             <div class="container">
                 <h3 class="offer__title section__title">Amazing <span class="orange">offer</span></h3>
                 <div class="offer__slider offer__row row">
@@ -352,7 +366,7 @@
             </div>
         </section>
         <!------------------------Events----------------------------------->
-        <section class="events">
+        <section class="events" id="events">
             <div class="container">
                 <div class="events__inner">
                     <h2 class="events__title section__title">
@@ -403,12 +417,26 @@
 
                         </div>
                     </div>
+                    <div class="events__arrow">
+                        <span class="prev__arrow">
+                            <svg width="68" height="68" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M34 1.62549C16.122 1.62548 1.625 16.119 1.625 34.0005C1.625 51.8785 16.122 66.3755 34 66.3755C51.878 66.3755 66.375 51.8785 66.375 34.0005C66.375 16.119 51.878 1.62549 34 1.62549Z"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M39.048 21.8511L26.847 33.9996L39.048 46.1481" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </span>
+                        <span class="next__arrow">
+                            <svg width="68" height="68" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M34 1.62549C16.122 1.62548 1.625 16.119 1.625 34.0005C1.625 51.8785 16.122 66.3755 34 66.3755C51.878 66.3755 66.375 51.8785 66.375 34.0005C66.375 16.119 51.878 1.62549 34 1.62549Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M39.048 21.8511L26.847 33.9996L39.048 46.1481" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </span>
+                    </div>
                 </div>
 
             </div>
         </section>
         <!-----------------------Contact----------------------------------->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <h2 class="contact__title section__title">Contact <span class="orange">us</span></h2>
                 <div class="contact__row row">
@@ -518,9 +546,8 @@
                 </div>
             </div>
         </section>
-        </section>
         <!-----------------------Newsletter--------------------------------->
-        <section class="newsletter">
+        <section class="newsletter" id="newsletter">
             <div class="container">
                 <h2 class="newsletter__title section__title">newsletter</h2>
                 <p class="newsletter__description">Sign Up to our newsletter and Save 40% on next Purchase</p>

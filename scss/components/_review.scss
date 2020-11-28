@@ -9,7 +9,7 @@
 
     &__opacity{
         position: absolute;
-        z-index: 2;
+        z-index: 1;
         left: 0;
         top:0;
         background-color: black;
@@ -20,7 +20,7 @@
     &__inner{
         position: absolute;
         width: 100%;
-        z-index: 5;
+        z-index: 2;
         left: 0;
         top:0;
     }

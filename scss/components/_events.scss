@@ -37,6 +37,10 @@
     background-color: $light-dark;
     height: 100%;
   }
+  i{
+    color: white;
+    font-size: 65px;
+  }
 
   .slick-initialized .slick-slide {
     display: flex;
@@ -58,19 +62,25 @@
     outline: none;
     border: none;
     z-index: 55;
-    background-image:url('/images/svg/arrow.svg');
-    width: 84px;
-    height: 84px;
-    background-repeat: no-repeat;
-    background-color: transparent; 
+    svg{
+      stroke:$orange;
+      transition: 0.3s;
+      &:hover{
+        stroke: $white;
+      }
+      
+    }
+   
   }
-  .slick-prev{
+  .prev__arrow{
     left: -150px;
     top: 78%;
     transform: translateY(-78%);
+    color: white;
+    font-size: 50px;
   }
-  .slick-next{
-      transform:rotate(180deg);
+  .next__arrow{
+    transform: rotate(180deg);
     right:-150px;
     top: 70%;
 }

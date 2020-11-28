@@ -31,6 +31,12 @@ function myEventsFunction() {
     moreText.style.display = "inline";
   }
 }
+function openNav() {
+  document.getElementById("myNav").style.width="25%";
+}
+function closeNav() {
+  document.getElementById("myNav").style.width="0%";
+}
 /*Function for slider in 'NEW'
 =============================================*/
   $('.new__slider').slick({
@@ -74,6 +80,8 @@ $('.events__slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   infinite:true,
+  prevArrow:".prev__arrow",
+  nextArrow:".next__arrow"
 });
 
 /*Function for slider FILTER-IS-ACTIVE in 'SORT'
