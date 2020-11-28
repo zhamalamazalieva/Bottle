@@ -20,8 +20,85 @@
                     <img class="header__logo" src="./images/png/logo.png" alt="logo">
                     <div class="header__top--right">
                         <ul class="header__list row">
-                            <li class="list__item"><a class="list__link" href="">Login</a></li>
-                            <li class="list__item"><a a class="list__link" href="">Register</a></li>
+                            <li class="list__item"><span class="list__link" onclick="openLogin()">Login</span>
+                                <!-----------------------------------------Login------------------------------------->
+                                <div id="myLogin" class="login__overlay overlay">
+                                    <form action="" class="login__form">
+                                        <div class="login__img-container">
+                                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                xml:space="preserve">
+                                                <circle style="fill:#ffffff;" cx="256" cy="256" r="256" />
+                                                <path d="M442.272,405.696c-11.136-8.8-24.704-15.136-39.424-18.208l-70.176-14.08
+                                                c-7.36-1.408-12.672-8-12.672-15.68v-16.096c4.512-6.336,8.768-14.752,13.216-23.552c3.456-6.816,8.672-17.088,11.264-19.744
+                                                c14.208-14.272,27.936-30.304,32.192-50.976c3.968-19.392,0.064-29.568-4.512-37.76c0-20.448-0.64-46.048-5.472-64.672
+                                                c-0.576-25.216-5.152-39.392-16.672-51.808c-8.128-8.8-20.096-10.848-29.728-12.48c-3.776-0.64-8.992-1.536-10.912-2.56
+                                                c-17.056-9.216-33.92-13.728-54.048-14.08c-42.144,1.728-93.952,28.544-111.296,76.352c-5.376,14.56-4.832,38.464-4.384,57.664
+                                                l-0.416,11.552c-4.128,8.064-8.192,18.304-4.192,37.76c4.224,20.704,17.952,36.768,32.416,51.232
+                                                c2.368,2.432,7.712,12.8,11.232,19.648c4.512,8.768,8.8,17.152,13.312,23.456v16.096c0,7.648-5.344,14.24-12.736,15.68l-70.24,14.08
+                                                c-14.624,3.104-28.192,9.376-39.296,18.176c-3.456,2.784-5.632,6.848-5.984,11.264s1.12,8.736,4.096,12.032
+                                                C115.648,481.728,184.224,512,256,512s140.384-30.24,188.16-83.008c2.976-3.296,4.48-7.648,4.096-12.064
+                                                C447.904,412.512,445.728,408.448,442.272,405.696z" />
+                                            </svg>
+                                            <span class="login__closebtn" onclick="closeLogin()">&times;</span>
+                                        </div>
+                                        <div class="login__container">
+                                            <label for="username" class="login__label">
+                                                <span>Username</span>
+                                                <input type="text" class="login__input">
+                                            </label>
+                                            <label for="password" class="login__label">
+                                                <span>Password</span>
+                                                <input type="password" class="login__input">
+                                            </label>
+                                            <button type="submit" class="login__button btn--orange btn">Login</button>
+                                            <label>
+                                                <input type="checkbox" checked="checked" name="remember">
+                                                <span class="login__checkbox">Remember me</span>
+                                            </label>
+                                            <div class="row login__row">
+                                                <button type="button" onclick="closeLogin()"
+                                                    class="cancelbtn btn--red btn">Cancel</button>
+                                                <span class="login__psw">Forgot <a href="#">password?</a></span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!----------------------------------------------------------------------------------->
+                            </li>
+                            <li class="list__item">
+                                <span onclick="openRegister()" class="list__link" href="">Register</span>
+                                <!-----------------------------------------Login------------------------------------->
+                                <div id="myRegister" class="register__overlay overlay">
+                                    <span class="register__closebtn" onclick="closeRegister()">&times;</span>
+                                    <div class="register__container">
+                                        <h2 class="register__title">Register</h2>
+                                        <p class="register__description">Please fill in this form to create an account.
+                                        </p>
+                                        <form action="" class="register__form">
+                                            <label for="email" class="register__label">
+                                                <span>Email</span>
+                                                <input type="email" class="register__input">
+                                            </label>
+                                            <label for="password" class="register__label">
+                                                <span>Password</span>
+                                                <input type="password" class="register__input">
+                                            </label>
+                                            <label for="password" class="register__label">
+                                                <span>Repeat Password</span>
+                                                <input type="password" class="register__input">
+                                            </label>
+                                            <span class="register__text">By creating an account you agree to our
+                                                <a>Terms & Privacy. </a></span>
+                                            <button type="submit"
+                                                class="register__button btn--orange btn">Register</button>
+                                            <span class="register__text">Already have an account? <a href="#">Sign
+                                                    in<a></span>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!----------------------------------------------------------------------------------->
+                            </li>
                             <li class="list__item"><a a class="list__link" href="">Wish List (0)</a></li>
                         </ul>
                         <ul class="header__icons">
@@ -36,13 +113,13 @@
                                     </svg>
                                 </span>
                                 <!---------------------------------Search input----------------------->
-                                <div id="mySearch" class="overlay overlay2">
+                                <div id="mySearch" class="overlay search__overlay">
                                     <span class="closebtn" onclick="closeSearch()">&times;</span>
-                                    <form class="overlay__search">
-                                        <label for="search" class="overlay__label">
-                                            <input class="search" type="text" placeholder="Search...">
+                                    <form class="search__form">
+                                        <label for="search" class="search__label">
+                                            <input class="search__input" type="text" placeholder="Search...">
                                         </label>
-                                        <button class="button" type="submit">
+                                        <button class="search__button" type="submit">
                                             <i class="fa fa-search"></i>
                                         </button>
                                     </form>
@@ -72,23 +149,23 @@
                                     </svg>
                                 </span>
                                 <!-----------------------------Burger Menu---------------------------->
-                                <nav id="myNav" class="overlay">
+                                <nav id="myNav" class="overlay burger__overlay">
                                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                    <ul class="overlay__burger-menu">
-                                        <li class="overlay__item"><a href="#new" class="overlay__link">New Wines</a>
+                                    <ul class="burger__menu">
+                                        <li class="menu__item"><a href="#new" class="menu__link">New Wines</a>
                                         </li>
-                                        <li class="overlay__item"><a href="#sort" class="overlay__link">Futured
+                                        <li class="menu__item"><a href="#sort" class="menu__link">Futured
                                                 Products</a></li>
-                                        <li class="overlay__item"><a href="#review" class="overlay__link">Client
+                                        <li class="menu__item"><a href="#review" class="menu__link">Client
                                                 Review</a></li>
-                                        <li class="overlay__item"><a href="#offer" class="overlay__link">Amazing
+                                        <li class="menu__item"><a href="#offer" class="menu__link">Amazing
                                                 Offer</a></li>
-                                        <li class="overlay__item"><a href="#events" class="overlay__link">Featured
+                                        <li class="menu__item"><a href="#events" class="menu__link">Featured
                                                 Events</a></li>
-                                        <li class="overlay__item"><a href="#contact" class="overlay__link">Contact
+                                        <li class="menu__item"><a href="#contact" class="menu__link">Contact
                                                 Us</a></li>
-                                        <li class="overlay__item"><a href="#newsletter"
-                                                class="overlay__link">Newsletter</a></li>
+                                        <li class="menu__item"><a href="#newsletter" class="menu__link">Newsletter</a>
+                                        </li>
                                     </ul>
                                 </nav>
                                 <!-------------------------------------------------------------------->
