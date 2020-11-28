@@ -31,11 +31,21 @@ function myEventsFunction() {
     moreText.style.display = "inline";
   }
 }
+/*Function for BURGER MENU in HEADER
+============================================*/
 function openNav() {
-  document.getElementById("myNav").style.width="25%";
+  document.getElementById("myNav").style.width = "25%";
 }
 function closeNav() {
-  document.getElementById("myNav").style.width="0%";
+  document.getElementById("myNav").style.width = "0%";
+}
+/*Function for INPUT SEARCH in HEADER
+============================================*/
+function openSearch(){
+  document.getElementById("mySearch").style.display = "flex";
+}
+function closeSearch() {
+  document.getElementById("mySearch").style.display = "none";
 }
 /*Function for slider in 'NEW'
 =============================================*/

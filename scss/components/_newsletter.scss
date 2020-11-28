@@ -22,9 +22,10 @@
         background-color: $black;
         padding: 18px 35px 18px 35px;
         outline: none;
-        border: none;
         color: $white;
         width: 350px;
+        border: none;
+        border: 1px solid transparent;
         @include font($font-poppins, 18px, 400);
 
         &::placeholder{
@@ -36,9 +37,16 @@
     }
     &__button{
         @include font($font-poppins, 18px, 400);
-        color: $white;
+        color: $black;
         padding: 18px 20px;
+        border: 1px solid transparent;
         outline: none;
-        border: none;
+        background-color: $orange;
+        transition: 0.3s;
+        &:hover{
+            border: 1px solid $orange;
+            background-color: transparent;
+            color: $white;
+        }
     }
 }
