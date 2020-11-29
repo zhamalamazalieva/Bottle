@@ -532,6 +532,10 @@ img {
   color: #FFFFFF;
 }
 
+.login__psw a {
+  color: #E2B024;
+}
+
 .login__row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -662,6 +666,10 @@ img {
   font-size: 18px;
   color: #FFFFFF;
   padding: 0 0 30px;
+}
+
+.register__text a {
+  color: #E2B024;
 }
 
 .register__label {
@@ -1549,10 +1557,10 @@ img {
 
 .newsletter__email {
   background-color: black;
-  padding: 18px 35px 18px 35px;
+  padding: 18px 35px;
   outline: none;
   color: #FFFFFF;
-  width: 350px;
+  width: 80%;
   border: none;
   border: 1px solid transparent;
   font-family: "Poppins", sans-serif;
@@ -1644,14 +1652,6 @@ img {
   margin-right: 15px;
 }
 
-.footer__foter {
-  color: white;
-  text-align: center;
-  border-top: 2px solid white;
-  padding-top: 22px;
-  margin-bottom: 44px;
-}
-
 .footer__social-icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1726,8 +1726,23 @@ img {
     margin: 0;
     max-width: 25%;
   }
-  .header__list, .header__bottom, .header__slogan {
+  .header__list .list__item {
+    margin-left: 10px;
+  }
+  .header__list .list__item:first-child {
+    margin-left: 0;
+  }
+  .header__bottom, .header__slogan {
     display: none;
+  }
+  .header .overlay {
+    opacity: 1;
+  }
+  .header .burger__overlay,
+  .header .search__overlay,
+  .header .login__overlay,
+  .header .register__overlay {
+    width: 100%;
   }
 }
 
@@ -1934,6 +1949,27 @@ img {
   }
   .newsletter__title {
     padding: 60px 0 10px;
+  }
+  .newsletter__email {
+    padding: 10px 20px;
+    width: 85%;
+    font-size: 14px;
+  }
+  .newsletter__email::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .newsletter__email:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .newsletter__email::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .newsletter__email::placeholder {
+    font-size: 14px;
+  }
+  .newsletter__button {
+    font-size: 14px;
+    padding: 10px 20px;
   }
 }
 /*# sourceMappingURL=index.css.map */
