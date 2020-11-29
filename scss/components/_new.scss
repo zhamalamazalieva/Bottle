@@ -91,6 +91,12 @@
         color: $white;
         @include font($font-poppins, 24px, 500);
         line-height: 30px;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+          color: $orange;
+          border-bottom:2px solid $orange
+        }
       }
       .slider__prev {
         left: -20px;

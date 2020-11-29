@@ -131,10 +131,6 @@ img {
       flex-wrap: wrap;
 }
 
-.row a {
-  color: #E2B024;
-}
-
 .column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -891,6 +887,15 @@ img {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.new__arrows .slider__prev:hover,
+.new__arrows .slider__next:hover {
+  color: #E2B024;
+  border-bottom: 2px solid #E2B024;
 }
 
 .new__arrows .slider__prev {
@@ -943,6 +948,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 .sort__filter::after {
@@ -1622,7 +1628,7 @@ img {
 .newsletter__button:hover {
   border: 1px solid #E2B024;
   background-color: transparent;
-  color: #FFFFFF;
+  color: #E2B024;
 }
 
 .footer__top {
