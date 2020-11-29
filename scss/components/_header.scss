@@ -3,7 +3,9 @@
   // width: 100%;
   // background-color: $black;
   // z-index: 5;
-  &__top, &__top--right,&__icons{
+  &__top,
+  &__top--right,
+  &__icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +18,8 @@
   }
   &__list,
   &__icons,
-  &__slogan,.list__link {
+  &__slogan,
+  .list__link {
     @include font($font-poppins, 14px, 400);
     line-height: 18px;
     color: $white;
@@ -28,11 +31,11 @@
   }
   .list__item {
     margin-left: 46px;
-    transition: .3s;
-    .list__link{
-        &:hover{
-            color: $orange;
-        }
+    transition: 0.3s;
+    .list__link {
+      &:hover {
+        color: $orange;
+      }
     }
   }
 }
@@ -54,7 +57,7 @@
     }
   }
 }
-.overlay{
+.overlay {
   position: fixed;
   width: 0%;
   height: 100%;
@@ -62,288 +65,286 @@
   top: 0;
   right: 0;
   overflow-x: hidden;
-  background-color:$black;
-  opacity: .9;
+  background-color: $black;
+  opacity: 0.9;
   transition: 0.7s;
   .closebtn {
     position: absolute;
     top: 5%;
     right: 45px;
     font-size: 45px;
-    color:$orange;
+    color: $orange;
     transition: 0.3;
     cursor: pointer;
-    &:hover, &:focus {
-        color: $white;
-       }
-  }
-}
-.burger{
-    &__overlay{
-      width: 40%;
-      display: none;
+    &:hover,
+    &:focus {
+      color: $white;
     }
-    &__menu{
-      top: 5%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items:center;
-        .menu__link{
-            color:$orange;
-            position: relative;
-            @include font($font-choco, 16px, 400);
-            line-height: 1.5;
-            padding: 10px;
-            transition: 0.4s;
-            &:hover, &:focus {
-              &::before{
-                  content: '';
-                  position: absolute;
-                  height: 0;
-                  width: 0;
-                  background-color: $white;
-                  left: -55px;
-                  top: 50%;
-                  transition: 0.4s;
-                  animation: example .3s forwards;
-                  @keyframes example{
-                      0%{
-                          width: 0;
-                          height: 0;
-                      }
-                      25%{
-                          width:10px;
-                          height: 1px;
-                      }
-                      50%{
-                          width: 25px;
-                          height: 1px;
-                      }
-                      75%{
-                          width: 35px;
-                          height: 1px;
-                      }
-                      100%{
-                          width: 45px;
-                          height: 1px;
-                      }
-                  }
-              }    
-              color: $white;
-            }
-      }
   }
- 
 }
-.search{
-  &__overlay{
+.burger {
+  &__overlay {
     width: 40%;
     display: none;
   }
-  &__form{
+  &__menu {
+    top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .menu__link {
+      color: $orange;
+      position: relative;
+      @include font($font-choco, 16px, 400);
+      line-height: 1.5;
+      padding: 10px;
+      transition: 0.4s;
+      &:hover,
+      &:focus {
+        &::before {
+          content: "";
+          position: absolute;
+          height: 0;
+          width: 0;
+          background-color: $white;
+          left: -55px;
+          top: 50%;
+          transition: 0.4s;
+          animation: example 0.3s forwards;
+          @keyframes example {
+            0% {
+              width: 0;
+              height: 0;
+            }
+            25% {
+              width: 10px;
+              height: 1px;
+            }
+            50% {
+              width: 25px;
+              height: 1px;
+            }
+            75% {
+              width: 35px;
+              height: 1px;
+            }
+            100% {
+              width: 45px;
+              height: 1px;
+            }
+          }
+        }
+        color: $white;
+      }
+    }
+  }
+}
+.search {
+  &__overlay {
+    width: 40%;
+    display: none;
+  }
+  &__form {
     position: relative;
     top: 5%;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
   }
-  &__input{
-        background-color: $white;
-        padding: 18px 35px 18px 35px;
-        outline: none;
-        color: $black;
-        width: 350px;
-        border: none;
-        border: 1px solid transparent;
-        @include font($font-poppins, 18px, 400);
-        &::placeholder{
-            color: $black;
-            @include font($font-poppins, 18px, 700);
-        }
+  &__input {
+    background-color: $white;
+    padding: 18px 35px 18px 35px;
+    outline: none;
+    color: $black;
+    width: 350px;
+    border: none;
+    border: 1px solid transparent;
+    @include font($font-poppins, 18px, 400);
+    &::placeholder {
+      color: $black;
+      @include font($font-poppins, 18px, 700);
+    }
   }
-  &__button{
-        display: inline-block;
-        padding: 15px 30px;
-        border: 1px solid transparent;
-        outline: none;
-        background-color: $orange;
-        transition: 0.3s;
-        cursor: pointer;
-        i{
-            color: $black;
-            font-size: 27px;
-        }    
-        &:hover{
-            border: 1px solid $orange;
-            background-color: transparent;
-            i{
-                color: $orange;
-
-            }
-        }
+  &__button {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: $orange;
+    transition: 0.3s;
+    cursor: pointer;
+    i {
+      color: $black;
+      font-size: 27px;
+    }
+    &:hover {
+      border: 1px solid $orange;
+      background-color: transparent;
+      i {
+        color: $orange;
+      }
+    }
   }
 }
-.login{
-  &__overlay{
+.login {
+  &__overlay {
     width: 40%;
     display: none;
   }
-  &__form{
+  &__form {
     width: 90%;
     margin: 5% auto 15% auto;
   }
-  &__img-container{
+  &__img-container {
     text-align: center;
     margin: 100px 0 50px;
-    svg{
+    svg {
       width: 30%;
       fill: $orange;
-      
     }
   }
-  &__psw{
+  &__psw {
     @include font($font-poppins, 20px, 400);
     color: $white;
   }
-  &__row{
+  &__row {
     justify-content: space-between;
     align-items: center;
   }
-  &__container{
-    padding:0 40px;
+  &__container {
+    padding: 0 40px;
     display: flex;
     flex-direction: column;
   }
-  &__checkbox{
+  &__checkbox {
     @include font($font-poppins, 20px, 400);
     color: $white;
     margin: 30px 0 50px;
   }
-  &__label{
+  &__label {
     display: flex;
     flex-direction: column;
     position: relative;
     margin-bottom: 30px;
-    
-    span{
-        @include font($font-poppins, 20px, 400);
-        line-height: 1.5;
-        color: white;
-        position: absolute;
-        top: -15px;
-        left: 35px;
-        padding: 0 15px;
-        background-color:$black;
+
+    span {
+      @include font($font-poppins, 20px, 400);
+      line-height: 1.5;
+      color: white;
+      position: absolute;
+      top: -15px;
+      left: 35px;
+      padding: 0 15px;
+      background-color: $black;
     }
-    input{
-        
-        width: 100%;
-        height: 55px;
-        box-sizing: border-box;
-        padding: 12px 20px;
-        border: 1px solid $white;
-        background-color: transparent;
-        outline: none;
-        color: white;
-        font-size: 20px;
-     
+    input {
+      width: 100%;
+      height: 55px;
+      box-sizing: border-box;
+      padding: 12px 20px;
+      border: 1px solid $white;
+      background-color: transparent;
+      outline: none;
+      color: white;
+      font-size: 20px;
     }
   }
-  &__button{
+  &__button {
     width: 100%;
   }
-  &__closebtn{
+  &__closebtn {
     position: absolute;
     top: 5%;
     right: 45px;
     font-size: 45px;
-    color:$orange;
+    color: $orange;
     transition: 0.3;
     cursor: pointer;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $white;
-     }
+    }
   }
 }
-.register{
-  &__overlay{
+.register {
+  &__overlay {
     width: 40%;
     display: none;
   }
-  &__container{
-    padding:0 40px;
+  &__container {
+    padding: 0 40px;
     display: flex;
     flex-direction: column;
     width: 80%;
     margin: 5% auto 15% auto;
   }
-  &__title{
+  &__title {
     @include font($font-poppins, 36px, 500);
     line-height: 1;
     color: $white;
     text-align: left;
     padding: 100px 0 30px;
   }
-  &__psw, &__description{
+  &__psw,
+  &__description {
     @include font($font-poppins, 20px, 400);
     color: $white;
   }
-  &__description{
+  &__description {
     padding-bottom: 100px;
- }
- 
-  &__text{
+  }
+
+  &__text {
     @include font($font-poppins, 18px, 400);
     color: $white;
-    padding:0 0 30px ;
+    padding: 0 0 30px;
   }
-  &__label{
+  &__label {
     display: flex;
     flex-direction: column;
     position: relative;
     margin-bottom: 30px;
-    
-    span{
-        @include font($font-poppins, 20px, 400);
-        line-height: 1.5;
-        color: white;
-        position: absolute;
-        top: -15px;
-        left: 35px;
-        padding: 0 15px;
-        background-color:$black;
+
+    span {
+      @include font($font-poppins, 20px, 400);
+      line-height: 1.5;
+      color: white;
+      position: absolute;
+      top: -15px;
+      left: 35px;
+      padding: 0 15px;
+      background-color: $black;
     }
-    input{
-        
-        width: 100%;
-        height: 55px;
-        box-sizing: border-box;
-        padding: 12px 20px;
-        border: 1px solid $white;
-        background-color: transparent;
-        outline: none;
-        color: white;
-        font-size: 20px;
-     
+    input {
+      width: 100%;
+      height: 55px;
+      box-sizing: border-box;
+      padding: 12px 20px;
+      border: 1px solid $white;
+      background-color: transparent;
+      outline: none;
+      color: white;
+      font-size: 20px;
     }
   }
-  &__button{
+  &__button {
     width: 100%;
     margin-bottom: 30px;
   }
-  &__closebtn{
+  &__closebtn {
     position: absolute;
     top: 5%;
     right: 45px;
     font-size: 45px;
-    color:$orange;
+    color: $orange;
     transition: 0.3;
     cursor: pointer;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $white;
-     }
+    }
   }
 }

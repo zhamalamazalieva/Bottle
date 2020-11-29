@@ -1,0 +1,18 @@
+@include for-size(small-phone){
+    .review{
+        min-height: 640px;
+        &__title{
+            padding: 80px 0 30px;
+        }
+        &__name{
+            margin: 15px 0;
+        }
+        &__description{
+            width: 85%;
+        }
+        .slick-dots li button{
+            width: 10px;
+            height: 10px;
+        }
+    }
+}

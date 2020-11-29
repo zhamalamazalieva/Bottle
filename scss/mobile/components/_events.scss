@@ -1,0 +1,30 @@
+@include for-size(small-phone){
+    .events{
+        padding-bottom: 80px;
+        &__inner{
+            padding-top: 80px;
+        }
+        &__title{
+            margin-bottom: 20px;
+        }
+        &__name{
+            font-size: 16px;
+            padding: 10px 4px;
+        }
+        &__date, &__text{
+            font-size: 12px;
+            margin: 15px 0;
+        }
+        &__text{
+            width: 90%;
+        }
+        &__link{
+            padding: 0;
+            width: 85px;
+        }
+        &__arrow{
+            display: none;
+        }
+    }
+
+}

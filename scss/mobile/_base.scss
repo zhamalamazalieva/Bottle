@@ -1,0 +1,17 @@
+@include for-size(small-phone){
+    .container{
+        padding:0 25px;
+    }
+    .link{
+        font-size: 12px;
+        padding: 4px 0;
+    }
+    .btn{
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+    .section__title{
+        font-size:40px ;
+    }
+    
+}

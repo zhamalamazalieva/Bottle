@@ -1,0 +1,22 @@
+@include for-size(small-phone){
+    .offer{
+        &__title{
+            margin: 80px 0 30px;
+        }
+        &__name{
+            font-size: 16px;
+        }
+        &__price{
+            font-size: 28px;
+        }
+        .slick-dots li button{
+            width: 10px;
+            height: 10px;
+        }
+        &__img{
+            max-width: 220px;
+            height: auto;
+        }
+
+    }
+}

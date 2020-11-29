@@ -55,6 +55,7 @@
     }
     &__img{
         margin-bottom:15px;
+        max-height: 360px;
 
     }
     &__discount{
@@ -75,8 +76,6 @@
     }
     &__row{
         padding-top: 90px;
-
-
     }
     &__column{
         justify-content: flex-start !important;

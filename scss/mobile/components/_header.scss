@@ -1,0 +1,15 @@
+@include for-size(small-phone){
+    .header{
+        &__top{
+            padding-top:25px 0;
+        }
+        &__logo{
+            margin: 0;
+            max-width:25%;
+        }
+        &__list, &__bottom, &__slogan{
+            display: none;
+        }
+
+    }
+}
