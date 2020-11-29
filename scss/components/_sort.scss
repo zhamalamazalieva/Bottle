@@ -12,6 +12,7 @@
         color: $white;
         display: flex;
         justify-content: center;  
+        cursor: pointer;
         &::after{
             content: "";
             position: absolute;
@@ -67,9 +68,9 @@
         top: 0 !important;
         width: 80px;
         height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display:flex  !important;
+        justify-content: center !important;
+        align-items: center !important;
 
     }
     &__row{

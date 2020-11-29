@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" sizes="16x16" href="./images/png/logo.png">
     <title>Drinks</title>
 </head>
@@ -19,13 +20,90 @@
                     <img class="header__logo" src="./images/png/logo.png" alt="logo">
                     <div class="header__top--right">
                         <ul class="header__list row">
-                            <li class="list__item"><a class="list__link" href="">Login</a></li>
-                            <li class="list__item"><a a class="list__link" href="">Register</a></li>
+                            <li class="list__item"><span class="list__link" onclick="openLogin()">Login</span>
+                                <!-----------------------------------------Login------------------------------------->
+                                <div id="myLogin" class="login__overlay overlay">
+                                    <form action="" class="login__form">
+                                        <div class="login__img-container">
+                                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                xml:space="preserve">
+                                                <circle style="fill:#ffffff;" cx="256" cy="256" r="256" />
+                                                <path d="M442.272,405.696c-11.136-8.8-24.704-15.136-39.424-18.208l-70.176-14.08
+                                                c-7.36-1.408-12.672-8-12.672-15.68v-16.096c4.512-6.336,8.768-14.752,13.216-23.552c3.456-6.816,8.672-17.088,11.264-19.744
+                                                c14.208-14.272,27.936-30.304,32.192-50.976c3.968-19.392,0.064-29.568-4.512-37.76c0-20.448-0.64-46.048-5.472-64.672
+                                                c-0.576-25.216-5.152-39.392-16.672-51.808c-8.128-8.8-20.096-10.848-29.728-12.48c-3.776-0.64-8.992-1.536-10.912-2.56
+                                                c-17.056-9.216-33.92-13.728-54.048-14.08c-42.144,1.728-93.952,28.544-111.296,76.352c-5.376,14.56-4.832,38.464-4.384,57.664
+                                                l-0.416,11.552c-4.128,8.064-8.192,18.304-4.192,37.76c4.224,20.704,17.952,36.768,32.416,51.232
+                                                c2.368,2.432,7.712,12.8,11.232,19.648c4.512,8.768,8.8,17.152,13.312,23.456v16.096c0,7.648-5.344,14.24-12.736,15.68l-70.24,14.08
+                                                c-14.624,3.104-28.192,9.376-39.296,18.176c-3.456,2.784-5.632,6.848-5.984,11.264s1.12,8.736,4.096,12.032
+                                                C115.648,481.728,184.224,512,256,512s140.384-30.24,188.16-83.008c2.976-3.296,4.48-7.648,4.096-12.064
+                                                C447.904,412.512,445.728,408.448,442.272,405.696z" />
+                                            </svg>
+                                            <span class="login__closebtn" onclick="closeLogin()">&times;</span>
+                                        </div>
+                                        <div class="login__container">
+                                            <label for="username" class="login__label">
+                                                <span>Username</span>
+                                                <input type="text" class="login__input">
+                                            </label>
+                                            <label for="password" class="login__label">
+                                                <span>Password</span>
+                                                <input type="password" class="login__input">
+                                            </label>
+                                            <button type="submit" class="login__button btn--orange btn">Login</button>
+                                            <label>
+                                                <input type="checkbox" checked="checked" name="remember">
+                                                <span class="login__checkbox">Remember me</span>
+                                            </label>
+                                            <div class="row login__row">
+                                                <button type="button" onclick="closeLogin()"
+                                                    class="cancelbtn btn--red btn">Cancel</button>
+                                                <span class="login__psw">Forgot <a href="#">password?</a></span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!----------------------------------------------------------------------------------->
+                            </li>
+                            <li class="list__item">
+                                <span onclick="openRegister()" class="list__link" href="">Register</span>
+                                <!-----------------------------------------Login------------------------------------->
+                                <div id="myRegister" class="register__overlay overlay">
+                                    <span class="register__closebtn" onclick="closeRegister()">&times;</span>
+                                    <div class="register__container">
+                                        <h2 class="register__title">Register</h2>
+                                        <p class="register__description">Please fill in this form to create an account.
+                                        </p>
+                                        <form action="" class="register__form">
+                                            <label for="email" class="register__label">
+                                                <span>Email</span>
+                                                <input type="email" class="register__input">
+                                            </label>
+                                            <label for="password" class="register__label">
+                                                <span>Password</span>
+                                                <input type="password" class="register__input">
+                                            </label>
+                                            <label for="password" class="register__label">
+                                                <span>Repeat Password</span>
+                                                <input type="password" class="register__input">
+                                            </label>
+                                            <span class="register__text">By creating an account you agree to our
+                                                <a>Terms & Privacy. </a></span>
+                                            <button type="submit"
+                                                class="register__button btn--orange btn">Register</button>
+                                            <span class="register__text">Already have an account? <a href="#">Sign
+                                                    in<a></span>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!----------------------------------------------------------------------------------->
+                            </li>
                             <li class="list__item"><a a class="list__link" href="">Wish List (0)</a></li>
                         </ul>
                         <ul class="header__icons">
                             <li>
-                                <a class="header__icon" href="">
+                                <span class="header__icon" onclick="openSearch()">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="11.7666" cy="11.7666" r="8.98856" stroke="white" stroke-width="1.5"
@@ -33,7 +111,20 @@
                                         <path d="M18.0183 18.4851L21.5423 22" stroke="white" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-                                </a>
+                                </span>
+                                <!---------------------------------Search input----------------------->
+                                <div id="mySearch" class="overlay search__overlay">
+                                    <span class="closebtn" onclick="closeSearch()">&times;</span>
+                                    <form class="search__form">
+                                        <label for="search" class="search__label">
+                                            <input class="search__input" type="text" placeholder="Search...">
+                                        </label>
+                                        <button class="search__button" type="submit">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                                <!-------------------------------------------------------------------->
                             </li>
                             <li>
                                 <a class="header__icon" href="">
@@ -51,12 +142,33 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="header__icon" href="">
+                                <span class="header__icon" onclick="openNav()">
                                     <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="white" />
                                     </svg>
-                                </a>
+                                </span>
+                                <!-----------------------------Burger Menu---------------------------->
+                                <nav id="myNav" class="overlay burger__overlay">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    <ul class="burger__menu">
+                                        <li class="menu__item"><a href="#new" class="menu__link">New Wines</a>
+                                        </li>
+                                        <li class="menu__item"><a href="#sort" class="menu__link">Futured
+                                                Products</a></li>
+                                        <li class="menu__item"><a href="#review" class="menu__link">Client
+                                                Review</a></li>
+                                        <li class="menu__item"><a href="#offer" class="menu__link">Amazing
+                                                Offer</a></li>
+                                        <li class="menu__item"><a href="#events" class="menu__link">Featured
+                                                Events</a></li>
+                                        <li class="menu__item"><a href="#contact" class="menu__link">Contact
+                                                Us</a></li>
+                                        <li class="menu__item"><a href="#newsletter" class="menu__link">Newsletter</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!-------------------------------------------------------------------->
                             </li>
                         </ul>
                     </div>
@@ -80,7 +192,7 @@
     <!------------------------------Main----------------------------------->
     <main class="main">
         <!--------------------------Hero----------------------------------->
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container">
                 <div class="hero__row row">
                     <span class="hero__suptitle">The Experlence of Generations</span>
@@ -96,14 +208,15 @@
                         </span>
                     </p>
                     <div class="hero__link readmore">
-                        <a onclick="myFunction()" id="myLink" href="#" class="link">Read <span class="uppercase">more</span></a>
+                        <a onclick="myFunction()" id="myLink" href="#" class="link">Read <span
+                                class="uppercase">more</span></a>
                     </div>
                     <img src="./images/png/hero.png" alt="" class="hero__img">
                 </div>
             </div>
         </section>
         <!--------------------------New------------------------------------>
-        <section class="new">
+        <section class="new" id="new">
             <div class="container">
                 <div class="new__row row">
                     <div class="col-6">
@@ -140,7 +253,7 @@
             </div>
         </section>
         <!-------------------------Sort------------------------------------>
-        <section class="sort">
+        <section class="sort" id="sort">
             <div class="container">
                 <div class="column align-items">
                     <h2 class="sort__title section__title">Featured <span class="orange">Products</span></h2>
@@ -248,14 +361,15 @@
                         </div>
                     </div>
                     <div class="sort__link readmore">
-                        <a onclick="myFunction()" id="myLink" href="#" class="link">View <span class="uppercase">more</span></a>
+                        <a onclick="myFunction()" id="myLink" href="#" class="link">View <span
+                                class="uppercase">more</span></a>
                     </div>
                 </div>
             </div>
 
         </section>
         <!------------------------Review----------------------------------->
-        <section class="review">
+        <section class="review" id="review">
             <div class="container">
                 <div class="review__inner">
                     <h2 class="review__title section__title">Client <span class="orange">Review</span></h2>
@@ -308,7 +422,7 @@
             <div class="review__opacity"></div>
         </section>
         <!-------------------------Offer----------------------------------->
-        <section class="offer">
+        <section class="offer" id="offer">
             <div class="container">
                 <h3 class="offer__title section__title">Amazing <span class="orange">offer</span></h3>
                 <div class="offer__slider offer__row row">
@@ -352,7 +466,7 @@
             </div>
         </section>
         <!------------------------Events----------------------------------->
-        <section class="events">
+        <section class="events" id="events">
             <div class="container">
                 <div class="events__inner">
                     <h2 class="events__title section__title">
@@ -403,12 +517,32 @@
 
                         </div>
                     </div>
+                    <div class="events__arrow">
+                        <span class="prev__arrow">
+                            <svg width="68" height="68" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M34 1.62549C16.122 1.62548 1.625 16.119 1.625 34.0005C1.625 51.8785 16.122 66.3755 34 66.3755C51.878 66.3755 66.375 51.8785 66.375 34.0005C66.375 16.119 51.878 1.62549 34 1.62549Z"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M39.048 21.8511L26.847 33.9996L39.048 46.1481" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span class="next__arrow">
+                            <svg width="68" height="68" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M34 1.62549C16.122 1.62548 1.625 16.119 1.625 34.0005C1.625 51.8785 16.122 66.3755 34 66.3755C51.878 66.3755 66.375 51.8785 66.375 34.0005C66.375 16.119 51.878 1.62549 34 1.62549Z"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M39.048 21.8511L26.847 33.9996L39.048 46.1481" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
                 </div>
 
             </div>
         </section>
         <!-----------------------Contact----------------------------------->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <h2 class="contact__title section__title">Contact <span class="orange">us</span></h2>
                 <div class="contact__row row">
@@ -518,9 +652,8 @@
                 </div>
             </div>
         </section>
-        </section>
         <!-----------------------Newsletter--------------------------------->
-        <section class="newsletter">
+        <section class="newsletter" id="newsletter">
             <div class="container">
                 <h2 class="newsletter__title section__title">newsletter</h2>
                 <p class="newsletter__description">Sign Up to our newsletter and Save 40% on next Purchase</p>
@@ -529,7 +662,7 @@
                         <input class="newsletter__email" type="text" placeholder="Email">
                     </label>
                     <label for="button" class="newsletter__label">
-                        <input class="newsletter__button btn--orange" type="submit" value="Subscribe">
+                        <input class="newsletter__button" type="submit" value="Subscribe">
                     </label>
                 </form>
             </div>
@@ -574,35 +707,42 @@
                     <div class="footer__social-icons social-icons row">
                         <a href="#" class="social-icons__item  align-items">
                             <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                <path clip-rule="evenodd" d="M34.9902 27.961C33.6582 32.245 30.3382 35.211 25.9202 35.865C19.1782 36.863 12.5582 31.751 12.0342 24.951C11.4902 17.895 17.0562 12.001 24.0022 12.001C25.6082 12.001 27.1402 12.317 28.5402 12.889C29.0262 13.087 29.5762 12.917 29.8242 12.457L32.6942 7.16298C32.9662 6.65698 32.7702 6.00498 32.2462 5.76898C29.7322 4.63298 26.9442 4.00098 24.0082 4.00098C12.7642 4.00098 3.68619 13.273 4.00819 24.587C4.30219 34.909 12.8222 43.545 23.1362 43.983C34.2282 44.451 43.4282 35.891 43.9862 25.045C44.0082 24.649 44.0002 22.343 43.9922 20.991C43.9902 20.439 43.5422 20.001 42.9922 20.001H24.9942C24.4422 20.001 23.9942 20.447 23.9942 21.001V26.961C23.9942 27.511 24.4422 27.961 24.9942 27.961H34.9902Z" />
+                                <path clip-rule="evenodd"
+                                    d="M34.9902 27.961C33.6582 32.245 30.3382 35.211 25.9202 35.865C19.1782 36.863 12.5582 31.751 12.0342 24.951C11.4902 17.895 17.0562 12.001 24.0022 12.001C25.6082 12.001 27.1402 12.317 28.5402 12.889C29.0262 13.087 29.5762 12.917 29.8242 12.457L32.6942 7.16298C32.9662 6.65698 32.7702 6.00498 32.2462 5.76898C29.7322 4.63298 26.9442 4.00098 24.0082 4.00098C12.7642 4.00098 3.68619 13.273 4.00819 24.587C4.30219 34.909 12.8222 43.545 23.1362 43.983C34.2282 44.451 43.4282 35.891 43.9862 25.045C44.0082 24.649 44.0002 22.343 43.9922 20.991C43.9902 20.439 43.5422 20.001 42.9922 20.001H24.9942C24.4422 20.001 23.9942 20.447 23.9942 21.001V26.961C23.9942 27.511 24.4422 27.961 24.9942 27.961H34.9902Z" />
                             </svg>
                         </a>
                         <a href="#" class="social-icons__item  align-items">
                             <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                <path clip-rule="evenodd" d="M16.1539 40.0005C30.6459 40.0005 39.0299 28.7486 39.0299 18.0706C39.0299 17.7766 41.0899 16.0086 41.9719 12.3226C42.1519 11.5746 41.4239 10.9846 40.7379 11.2986C38.9779 12.1066 37.1919 11.4666 36.4159 10.5466C33.4319 7.29255 28.4419 7.13655 25.2679 10.1966C23.2219 12.1706 22.3539 15.1106 22.9879 17.9166C16.2859 18.3946 11.6839 15.2186 7.89986 10.8646C7.41186 10.2986 6.50586 10.5966 6.40386 11.3446C5.84386 15.5086 5.66786 25.6325 15.6999 31.4466C13.9579 33.9506 10.5479 35.4286 6.75186 36.0626C5.91186 36.2046 5.71186 37.3686 6.47986 37.7446C9.48786 39.2246 12.7939 39.9986 16.1539 39.9946" />
+                                <path clip-rule="evenodd"
+                                    d="M16.1539 40.0005C30.6459 40.0005 39.0299 28.7486 39.0299 18.0706C39.0299 17.7766 41.0899 16.0086 41.9719 12.3226C42.1519 11.5746 41.4239 10.9846 40.7379 11.2986C38.9779 12.1066 37.1919 11.4666 36.4159 10.5466C33.4319 7.29255 28.4419 7.13655 25.2679 10.1966C23.2219 12.1706 22.3539 15.1106 22.9879 17.9166C16.2859 18.3946 11.6839 15.2186 7.89986 10.8646C7.41186 10.2986 6.50586 10.5966 6.40386 11.3446C5.84386 15.5086 5.66786 25.6325 15.6999 31.4466C13.9579 33.9506 10.5479 35.4286 6.75186 36.0626C5.91186 36.2046 5.71186 37.3686 6.47986 37.7446C9.48786 39.2246 12.7939 39.9986 16.1539 39.9946" />
                             </svg>
                         </a>
                         <a href="#" class="social-icons__item">
                             <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                <path clip-rule="evenodd" d="M5.9996 10.5C5.9996 8.016 8.0156 6 10.4996 6C12.9836 6 14.9996 8.016 14.9996 10.5C14.9996 12.984 12.9836 15 10.4996 15C8.0156 15 5.9996 12.984 5.9996 10.5ZM30.3008 16.8008C23.8388 16.8008 18.5988 22.0088 18.5988 28.4288V40.1988C18.5988 41.1928 19.4068 42.0008 20.4008 42.0008H24.5988C25.5928 42.0008 26.4008 41.1928 26.4008 40.1988V28.4288C26.4008 26.1568 28.3688 24.3408 30.7048 24.5748C32.7328 24.7768 34.1988 26.6308 34.1988 28.6688V40.1988C34.1988 41.1928 35.0068 42.0008 36.0008 42.0008H40.1988C41.1928 42.0008 42.0008 41.1928 42.0008 40.1988V28.4288C42.0008 22.0088 36.7608 16.8008 30.3008 16.8008ZM13.1992 18.5996H7.8012C6.8072 18.5996 5.9992 19.4056 5.9992 20.3996V40.1996C5.9992 41.1936 6.8072 41.9996 7.8012 41.9996H13.1992C14.1932 41.9996 14.9992 41.1936 14.9992 40.1996V20.3996C14.9992 19.4056 14.1932 18.5996 13.1992 18.5996Z" />
+                                <path clip-rule="evenodd"
+                                    d="M5.9996 10.5C5.9996 8.016 8.0156 6 10.4996 6C12.9836 6 14.9996 8.016 14.9996 10.5C14.9996 12.984 12.9836 15 10.4996 15C8.0156 15 5.9996 12.984 5.9996 10.5ZM30.3008 16.8008C23.8388 16.8008 18.5988 22.0088 18.5988 28.4288V40.1988C18.5988 41.1928 19.4068 42.0008 20.4008 42.0008H24.5988C25.5928 42.0008 26.4008 41.1928 26.4008 40.1988V28.4288C26.4008 26.1568 28.3688 24.3408 30.7048 24.5748C32.7328 24.7768 34.1988 26.6308 34.1988 28.6688V40.1988C34.1988 41.1928 35.0068 42.0008 36.0008 42.0008H40.1988C41.1928 42.0008 42.0008 41.1928 42.0008 40.1988V28.4288C42.0008 22.0088 36.7608 16.8008 30.3008 16.8008ZM13.1992 18.5996H7.8012C6.8072 18.5996 5.9992 19.4056 5.9992 20.3996V40.1996C5.9992 41.1936 6.8072 41.9996 7.8012 41.9996H13.1992C14.1932 41.9996 14.9992 41.1936 14.9992 40.1996V20.3996C14.9992 19.4056 14.1932 18.5996 13.1992 18.5996Z" />
                             </svg>
                         </a>
                         <a href="#" class="social-icons__item">
                             <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                <path clip-rule="evenodd" d="M34 7C34 6.448 33.55 6 33 6H28C22.476 6 18 10.03 18 15V20.4H13C12.448 20.4 12 20.848 12 21.4V26.6C12 27.152 12.448 27.6 13 27.6H18V41C18 41.552 18.448 42 19 42H25C25.55 42 26 41.552 26 41V27.6H31.238C31.688 27.6 32.082 27.3 32.204 26.868L33.646 21.668C33.824 21.032 33.344 20.4 32.684 20.4H26V15C26 14.006 26.894 13.2 28 13.2H33C33.55 13.2 34 12.752 34 12.2V7Z" />
+                                <path clip-rule="evenodd"
+                                    d="M34 7C34 6.448 33.55 6 33 6H28C22.476 6 18 10.03 18 15V20.4H13C12.448 20.4 12 20.848 12 21.4V26.6C12 27.152 12.448 27.6 13 27.6H18V41C18 41.552 18.448 42 19 42H25C25.55 42 26 41.552 26 41V27.6H31.238C31.688 27.6 32.082 27.3 32.204 26.868L33.646 21.668C33.824 21.032 33.344 20.4 32.684 20.4H26V15C26 14.006 26.894 13.2 28 13.2H33C33.55 13.2 34 12.752 34 12.2V7Z" />
                             </svg>
                         </a>
                     </div>
                     <ul>
                         <li class="footer__item">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M1.24275 2.6544C1.47999 2.26159 2.78712 0.832824 3.71991 0.875956C3.99875 0.899063 4.24523 1.06774 4.4455 1.26338C4.90535 1.71242 6.22172 3.41076 6.29644 3.76814C6.47822 4.64466 5.43375 5.14993 5.7534 6.03337C6.56834 8.02748 7.97253 9.4316 9.96751 10.2457C10.8502 10.5654 11.3555 9.52094 12.2321 9.70349C12.5887 9.7782 14.2879 11.0945 14.737 11.5543C14.9319 11.7538 15.1013 12.0011 15.1244 12.2799C15.1591 13.2619 13.6417 14.5875 13.3459 14.7569C12.648 15.256 11.7376 15.2476 10.6276 14.7315C7.5304 13.4429 2.58069 8.58666 1.26817 5.37252C0.765956 4.26879 0.731295 3.35222 1.24275 2.6544Z"
-                                    stroke="#E2B024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    stroke="#E2B024" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                             <a class="footer__link" href="#">Food&drink@gmail.com</a></li>
                         <li class="footer__item">
-                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12.9508 5.7959L9.75174 8.3716C9.14633 8.84626 8.29765 8.84626 7.69224 8.3716L4.4657 5.7959"
                                     stroke="#E2B024" stroke-width="1.5" stroke-linecap="round"
@@ -614,7 +754,8 @@
                             </svg>
                             <a class="footer__link" href="#">+012-3254-6987</a></li>
                         <li class="footer__item">
-                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M1.17932 6.79336C1.19013 3.61292 3.77714 1.04343 6.95758 1.05423C10.138 1.06504 12.7075 3.65205 12.6967 6.83249V6.89771C12.6576 8.9651 11.5032 10.876 10.088 12.3695C9.27865 13.2099 8.37483 13.954 7.39454 14.5868C7.13242 14.8136 6.74362 14.8136 6.4815 14.5868C5.02012 13.6357 3.73752 12.4347 2.69236 11.039C1.76083 9.82193 1.23195 8.34469 1.17932 6.81293L1.17932 6.79336Z"
                                     stroke="#E2B024" stroke-width="1.5" stroke-linecap="round"

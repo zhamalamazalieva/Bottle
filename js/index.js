@@ -31,6 +31,38 @@ function myEventsFunction() {
     moreText.style.display = "inline";
   }
 }
+/*Function for BURGER MENU in HEADER
+============================================*/
+function openNav() {
+  document.getElementById("myNav").style.display = "flex";
+}
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+/*Function for INPUT SEARCH in HEADER
+============================================*/
+function openSearch(){
+  document.getElementById("mySearch").style.display = "flex";
+}
+function closeSearch() {
+  document.getElementById("mySearch").style.display = "none";
+}
+/*Function for LOGIN in HEADER
+============================================*/
+function openLogin(){
+  document.getElementById("myLogin").style.display = "flex";
+}
+function closeLogin() {
+  document.getElementById("myLogin").style.display = "none";
+}
+/*Function for REGISTER in HEADER
+============================================*/
+function openRegister(){
+  document.getElementById("myRegister").style.display = "flex";
+}
+function closeRegister(){
+  document.getElementById("myRegister").style.display = "none";
+}
 /*Function for slider in 'NEW'
 =============================================*/
   $('.new__slider').slick({
@@ -74,6 +106,8 @@ $('.events__slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   infinite:true,
+  prevArrow:".prev__arrow",
+  nextArrow:".next__arrow"
 });
 
 /*Function for slider FILTER-IS-ACTIVE in 'SORT'

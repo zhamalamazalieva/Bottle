@@ -77,7 +77,6 @@
     }
     &__button{
         @include font($font-poppins, 36px, 500);
-        border: 2px solid transparent;
 
     }
 }

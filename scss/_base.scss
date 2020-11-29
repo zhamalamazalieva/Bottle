@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     box-sizing: border-box;
     background-color:$black;
@@ -28,6 +31,9 @@ img {
 .row{
     display: flex;
     flex-wrap: wrap;
+    // a{
+    //     color: $orange;
+    // }
 }
 .column{
     display: flex;
@@ -42,20 +48,30 @@ img {
     @include font($font-poppins, 24px, 500);
     line-height: 1;
     border: 1px solid transparent;
-    color: black;
+    outline: none;
+    color:$black;
     &--orange{
         background-color: $orange;
         transition: 0.3s;
         &:hover{
             background-color: transparent;
             border: 1px solid $orange;
-            color: $white;
+            color: $orange;
+        }
+    }
+    &--red{
+        background-color: red;
+        color: $black;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid red;
+            color: red;
         }
     }
 }
 .orange{
     color: $orange;
-}
+} 
 .section__title{
     @include font($font-choco, 48px, 400);
     line-height: 1.5;
