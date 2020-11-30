@@ -3,3 +3,17 @@
     font-weight: $weight;
     font-size: $size;
 }
+
+@mixin for-size($size) {
+    @if $size == small-phone {
+      @media (max-width: 599px) { @content; }
+    } @else if $size == tablet-portrait-up {
+      @media (min-width: 600px) { @content; }
+    } @else if $size == tablet-landscape-up {
+      @media (min-width: 768px) { @content; }
+    } @else if $size == desktop-up {
+      @media (min-width: 992px) { @content; }
+    } @else if $size == big-desktop-up {
+      @media (min-width: 1200px) { @content; }
+    }
+  }

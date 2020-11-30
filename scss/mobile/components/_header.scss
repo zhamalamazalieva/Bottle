@@ -1,0 +1,34 @@
+@include for-size(small-phone) {
+  .header {
+    &__top {
+      padding-top: 25px 0;
+    }
+    &__logo {
+      margin: 0;
+      max-width: 25%;
+    }
+    &__list {
+      .list__item {
+        margin-left: 10px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    &__bottom,
+    &__slogan {
+      display: none;
+    }
+    .overlay {
+      opacity: 1;
+    }
+    .burger,
+    .search,
+    .login,
+    .register {
+      &__overlay {
+        width: 100%;
+      }
+    }
+  }
+}

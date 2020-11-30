@@ -1,0 +1,31 @@
+@include for-size(small-phone){
+    .sort{
+        &__title{
+            margin: 80px 0 30px;
+        }
+        &__filter{
+            font-size: 18px;
+        }
+        &__item{
+            margin-bottom: 50px;
+        }
+        &__row{
+            padding-top: 80px;
+        }
+        &__product-name{
+            font-size: 18px;
+        }
+        &__old-price{
+            font-size: 14px;
+        }
+        &__new-price{
+            font-size: 18px;
+        }
+        &__link{
+            margin-bottom: 100px;
+        }
+        &__img{
+            max-height: 300px;
+        }
+    }
+}
