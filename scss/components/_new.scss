@@ -41,7 +41,7 @@
       position: relative;
     }
     &__img {
-      min-height: 690px;
+      min-height: 690px !important;
     }
     &__arrows {
       .slider__prev,

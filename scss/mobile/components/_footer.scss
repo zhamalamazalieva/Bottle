@@ -1,0 +1,25 @@
+@include for-size(small-phone){
+    .footer{
+        &__top{
+            margin:50px 0;
+        }
+        &__title{
+            font-size: 18px;
+            text-transform: capitalize;
+            margin:15px 0;
+        }
+        &__link{
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+        &__social-icons{
+            margin: 10px 0;
+            .social-icons__item{
+                margin-right: 30px;
+            }
+        }
+        &__bottom{
+            font-size: 14px;
+        }
+    }
+}
