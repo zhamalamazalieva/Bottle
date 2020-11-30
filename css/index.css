@@ -1814,7 +1814,7 @@ img {
     font-size: 18px;
   }
   .new__img {
-    min-height: 350px;
+    min-height: 350px !important;
   }
 }
 
