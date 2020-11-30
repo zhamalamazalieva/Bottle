@@ -107,7 +107,14 @@ $('.events__slider').slick({
   slidesToScroll: 1,
   infinite:true,
   prevArrow:".prev__arrow",
-  nextArrow:".next__arrow"
+  nextArrow:".next__arrow",
+  responsive:[{
+    breakpoint:599,
+    settings: {
+      dots:true,
+      arrows:false
+    }
+  }]
 });
 
 /*Function for slider FILTER-IS-ACTIVE in 'SORT'

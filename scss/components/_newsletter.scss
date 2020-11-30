@@ -1,6 +1,7 @@
 .newsletter{
     background-color: $light-dark;
     padding-bottom: 60px;
+    width: 100%;
     &__title{
         padding: 60px 0 24px;
         color: $orange;
@@ -20,10 +21,10 @@
     }
     &__email{
         background-color: $black;
-        padding: 18px 35px 18px 35px;
+        padding: 18px 35px;
         outline: none;
         color: $white;
-        width: 350px;
+        width: 80%;
         border: none;
         border: 1px solid transparent;
         @include font($font-poppins, 18px, 400);
