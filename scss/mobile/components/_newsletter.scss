@@ -19,7 +19,20 @@
         }
         &__button{
             font-size: 14px;
-            padding: 10px 20px;
+        }
+    }
+}
+/*=======================================*/
+@include for-size(iphone-x){
+    .newsletter{
+        &__form{
+            width: 85%;
+        }
+        &__button{
+            padding: 10px;
+        }
+        &__label{
+            font-size: 9px;
         }
     }
 }

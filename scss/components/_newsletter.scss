@@ -18,15 +18,13 @@
         display: flex;
         justify-content: center;
         align-items:center;
-        width: 45%;
+        width: 65%;
         margin: 0 auto;
     }
     &__label1{
-        width: 80%;
+        width: 75%;
     }
-    &__label2{
-        width: 20%;
-    }
+  
     &__email{
         box-sizing: border-box;
         background-color: $black;

@@ -20,7 +20,8 @@
       display: none;
     }
     .overlay {
-      opacity: 1;
+      opacity: .5;
+      backdrop-filter: 5px;
     }
     .burger,
     .search,
@@ -38,6 +39,28 @@
   .header{
     &__list{
       display: none;
+    }
+    .overlay{
+      opacity: .7;
+    }
+    .search{
+      &__input{
+        padding: 10px;
+        &::placeholder{
+          font-size: 12px;
+        }
+      }
+      &__button{
+        padding: 12px;
+        i{
+          font-size: 18px;
+        }
+      }
+    }
+    .burder{
+      &__menu{
+        top: 25%;
+      }
     }
   }
 }
