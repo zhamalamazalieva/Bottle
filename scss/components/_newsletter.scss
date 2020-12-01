@@ -18,13 +18,22 @@
         display: flex;
         justify-content: center;
         align-items:center;
+        width: 45%;
+        margin: 0 auto;
+    }
+    &__label1{
+        width: 80%;
+    }
+    &__label2{
+        width: 20%;
     }
     &__email{
+        box-sizing: border-box;
         background-color: $black;
         padding: 18px 35px;
         outline: none;
         color: $white;
-        width: 80%;
+        width: 100%;
         border: none;
         border: 1px solid transparent;
         @include font($font-poppins, 18px, 400);

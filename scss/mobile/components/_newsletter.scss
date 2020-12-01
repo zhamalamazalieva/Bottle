@@ -9,11 +9,13 @@
         }
         &__email{
             padding: 10px 20px;
-            width: 85%;
             font-size: 14px;
             &::placeholder{
                 font-size: 14px;
             }
+        }
+        &__form{
+            width:75%;
         }
         &__button{
             font-size: 14px;
