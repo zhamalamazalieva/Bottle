@@ -8,6 +8,7 @@
   &__item {
     position: relative;
     margin: 0 10px;
+    width: 100%;
   }
 
   &__info {
@@ -38,6 +39,7 @@
     @include font($font-choco, 36px, 700);
     line-height: 54px;
   }
+ 
   .slick-slider {
     position: relative;
     outline: none;
@@ -54,8 +56,8 @@
     }
     &::after {
       left: 0;
-    }
-  }
+    }}
+  
   .slick-track {
     display: flex;
     align-items: center;
@@ -69,17 +71,12 @@
 
     &.slick-current,
     &.slick-center {
-      .offer__info {
-        bottom: 20px;
-      }
+    
       .offer__item {
         .offer__opacity{
           opacity: 0;
         }
-        img {
-          // height: 100%;
-          min-height: 550px;
-        }
+      
       }
     }
     img {
@@ -88,7 +85,6 @@
   }
 
   .slick-list {
-    width: 100%;
     overflow: hidden;
   }
   .slick-dots {
@@ -113,4 +109,5 @@
   .slick-dots .slick-active button {
     background-color: $orange;
   }
+
 }

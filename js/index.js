@@ -95,7 +95,6 @@ $('.review__slider').slick({
   dots:true,
   slidesToShow:1,
   slidesToScroll:1,
-  centerMode: true,
   cssEase: 'linear',
 })
 /*Function for slider in 'EVENTS'

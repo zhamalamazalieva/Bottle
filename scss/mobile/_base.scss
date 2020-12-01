@@ -17,3 +17,22 @@
     
 }
 
+
+/*======================================*/
+@include for-size(iphone-x){
+    .btn{
+        padding: 10px 20px;
+        font-size: 14px
+    }
+    .section__title{
+        font-size:24px ;
+    }
+    .link{
+        font-size: 8px;
+        padding: 4px 0;
+        line-height: 1;
+    }
+    .readmore{
+        border-bottom: 1px solid $orange;
+    }
+}

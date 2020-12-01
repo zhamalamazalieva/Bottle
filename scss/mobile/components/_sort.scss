@@ -29,3 +29,33 @@
         }
     }
 }
+
+/*=========================================*/
+@include for-size(iphone-x){
+    .sort{
+        &__filter{
+            font-size: 14px;
+            .filter__items{
+                margin-right: 35px;
+            }
+        }
+        &__discount{
+            font-size: 12px;
+            width: 60px;
+            height: 30px;
+        }
+        &__img{
+            max-height: 220px;
+        }
+        &__product-name{
+            font-size: 14px;
+        }
+        &__old-price{
+            font-size: 11px;
+        }
+        &__new-price{
+            font-size: 14px;
+        }
+
+    }
+}

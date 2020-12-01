@@ -32,3 +32,12 @@
     }
   }
 }
+
+/*======================================*/
+@include for-size(iphone-x){
+  .header{
+    &__list{
+      display: none;
+    }
+  }
+}
