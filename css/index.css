@@ -1810,7 +1810,7 @@ img {
     display: none;
   }
   .header .overlay {
-    opacity: .5;
+    opacity: .9;
     -webkit-backdrop-filter: 5px;
             backdrop-filter: 5px;
   }
@@ -1828,7 +1828,7 @@ img {
     display: none;
   }
   .header .overlay {
-    opacity: .7;
+    opacity: .9;
   }
   .header .search__input {
     padding: 10px;
@@ -1859,6 +1859,7 @@ img {
 @media (max-width: 599px) {
   .hero {
     padding-top: 70px;
+    max-height: 100vh;
   }
   .hero__suptitle {
     font-size: 14px;
