@@ -858,7 +858,7 @@ img {
 }
 
 .new__img {
-  min-height: 690px !important;
+  max-height: 650px !important;
 }
 
 .new__arrows .slider__prev,
@@ -1227,6 +1227,19 @@ img {
   min-width: 0;
 }
 
+.offer__opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  background-color: black;
+  opacity: .7;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .offer__name {
   font-family: "ChocolateBox", sans-serif;
   font-weight: 400;
@@ -1286,11 +1299,15 @@ img {
 }
 
 .offer .slick-slide.slick-current .offer__info, .offer .slick-slide.slick-center .offer__info {
-  bottom: 25px;
+  bottom: 20px;
+}
+
+.offer .slick-slide.slick-current .offer__item .offer__opacity, .offer .slick-slide.slick-center .offer__item .offer__opacity {
+  opacity: 0;
 }
 
 .offer .slick-slide.slick-current .offer__item img, .offer .slick-slide.slick-center .offer__item img {
-  height: 100%;
+  min-height: 550px;
 }
 
 .offer .slick-slide img {
@@ -1812,7 +1829,7 @@ img {
     font-size: 14px;
   }
   .new__item--right {
-    margin-top: 250px;
+    margin-top: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1827,15 +1844,16 @@ img {
     max-width: 420px !important;
   }
   .new__arrows .slider__prev {
-    left: 15%;
+    left: 12%;
     font-size: 18px;
   }
   .new__arrows .slider__next {
-    right: 12%;
+    right: 9%;
     font-size: 18px;
   }
   .new__img {
-    min-height: 350px !important;
+    margin-top: 100px;
+    max-height: 480px !important;
   }
 }
 
@@ -1893,17 +1911,25 @@ img {
     margin: 80px 0 30px;
   }
   .offer__name {
-    font-size: 16px;
+    font-size: 10px;
+    font-weight: 200;
   }
   .offer__price {
-    font-size: 28px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .offer .slick-dots {
+    padding-top: 45px;
   }
   .offer .slick-dots li button {
     width: 10px;
     height: 10px;
   }
-  .offer__img {
-    height: 220px;
+  .offer .slick-slide.slick-current .offer__info, .offer .slick-slide.slick-center .offer__info {
+    bottom: 7px;
+  }
+  .offer .slick-slide.slick-current .offer__item img, .offer .slick-slide.slick-center .offer__item img {
+    min-height: 195px;
   }
 }
 
@@ -1913,6 +1939,7 @@ img {
   }
   .events__inner {
     padding-top: 80px;
+    position: relative;
   }
   .events__title {
     margin-bottom: 20px;
@@ -1935,9 +1962,41 @@ img {
   .events__arrow {
     display: none;
   }
+  .events .slick-dots {
+    padding-top: 80px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: -18%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .events .slick-dots li {
+    list-style-type: none;
+    margin: 10px;
+  }
+  .events .slick-dots li button {
+    outline: none;
+    border: transparent;
+    font-size: 0;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+  }
+  .events .slick-dots .slick-active button {
+    background-color: #E2B024;
+  }
 }
 
 @media (max-width: 599px) {
+  .contact {
+    padding-top: 70px;
+  }
   .contact__row {
     padding: 30px 0;
   }
