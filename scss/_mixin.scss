@@ -9,6 +9,8 @@
       @media (max-width: 599px) { @content; }
     } @else if $size == tablet-portrait-up {
       @media (min-width: 600px) { @content; }
+    } @else if $size == iphone-x {
+      @media (max-width: 420px) { @content; }
     } @else if $size == tablet-landscape-up {
       @media (min-width: 768px) { @content; }
     } @else if $size == desktop-up {

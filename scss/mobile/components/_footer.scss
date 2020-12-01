@@ -23,3 +23,31 @@
         }
     }
 }
+
+/*==========================================*/
+@include for-size(iphone-x){
+    .footer{
+        &__link{
+            margin-bottom:8px;
+            font-size: 12px;
+        }
+        &__social-icons{
+            .social-icons__item{
+                margin-right: 17px;
+            }
+        }
+        &__item{
+            &:last-child{
+                display: flex;
+                flex-wrap: nowrap;
+            }
+            svg{
+                margin-right: 5px;
+            }
+        }
+        &__bottom{
+            padding: 18px 25px;
+            font-size:10px;
+        }
+    }
+}

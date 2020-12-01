@@ -26,7 +26,7 @@
               }
               .offer__item {
                 img {
-                  min-height: 195px;
+                  // min-height: 195px;
                 }
               }
             }
@@ -34,6 +34,25 @@
         }
     }
 }
+
+/*=========================================*/
+@include for-size(iphone-x){
+  .offer{
+    .slick-slide {       
+      &.slick-current,
+      &.slick-center {
+        .offer__info {
+          bottom: 7px;
+        }
+        .offer__item {
+          img {
+            // min-height: 0;
+          }
+        }
+      }
      
+  }
+  }
+}
 
     
