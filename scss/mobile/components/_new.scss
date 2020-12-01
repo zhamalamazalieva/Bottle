@@ -20,7 +20,7 @@
             font-size: 14px;
         }
         &__item--right{
-            margin-top: 250px;
+            margin-top: 100px;
             display: flex;
             justify-content: center;
             align-items:center;
@@ -32,18 +32,19 @@
         }
         &__arrows{
             .slider__prev{
-                left: 15%;
+                left: 12%;
                 font-size: 18px;
 
             }
             .slider__next{
-                right: 12%;
+                right:9%;
                 font-size: 18px;
 
             }
         }
         &__img{
-            min-height: 350px !important;
+            margin-top: 100px;
+            max-height: 480px !important;
         }
 
     }

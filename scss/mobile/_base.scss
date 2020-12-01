@@ -1,6 +1,7 @@
 @include for-size(small-phone){
     .container{
-        padding:0 25px;
+        box-sizing: border-box;
+        padding:0 30px;
     }
     .link{
         font-size: 12px;
@@ -15,3 +16,4 @@
     }
     
 }
+
